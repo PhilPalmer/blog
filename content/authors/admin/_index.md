@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Michael Vahn
+name: Phil Palmer
 avatar_image: "user-full.png"
 # Username (this should match the folder name)
 authors:
@@ -14,35 +14,32 @@ btn:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Bioinformatician PhD Student
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Cambridge University
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include bioinformatics, machine learning and viral genomics.
 
 # Should the user's education and interests be displayed?
 display_education: false
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Bioinformatics
+- Machine Learning
+- Viral Genomics
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in Biology
+    institution: University of Cambridge
+    year: 2023
+  - course: BSc in Biology
+    institution: University of Southampton
+    year: 2018
 
 # Social/academia Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -77,8 +74,6 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Phil Palmer is an incoming PhD student in biology at the University of Cambridge, in [Professor Jonathan Heeney](https://www.infectiousdisease.cam.ac.uk/directory/jlh66@cam.ac.uk)'s lab. His research interests include bioinformatics, machine learning and viral genomics. He is currently working on using computational methods to predict and validate vaccine candidates, including those used for the development of a universal flu vaccine.
 
-![reviews](../../img/certifacates.jpg)
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. The point of using Lorem Ipsum. distracted by the readable content of a page.
+Prior to this he worked for two years as an early employee and bioinformatician at the breakout start-up [Lifebit](https://lifebit.ai/). He also holds a first-class degree in Biology from the University of Southampton.
