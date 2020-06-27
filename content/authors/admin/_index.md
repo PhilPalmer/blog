@@ -1,7 +1,7 @@
 ---
 # Display name
 name: Phil Palmer
-avatar_image: "user-full.png"
+avatar_image: "phil2.jpg"
 # Username (this should match the folder name)
 authors:
 - admin
