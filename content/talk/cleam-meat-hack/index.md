@@ -4,7 +4,7 @@ event: Hackathon
 event_url: https://www.linkedin.com/feed/update/urn:li:activity:6542091105389944832/
 location: Imperial College Advanced Hackspace, UK
 summary: Winner of the world's first clean meat hackathon
-abstract: "I was fortunate enough to participate in the world's first Cellular Agriculture Hackathon at Imperial College Advanced Hackspace! The competition was organised by HigherSteaks. After a very exciting and inspiring two days, our team's start-up 're-medAI' won the competition!"
+abstract: "I was fortunate enough to participate in the world's first Cellular Agriculture Hackathon at Imperial College Advanced Hackspace! The competition was organised by HigherSteaks. After a very exciting and inspiring two days, our team's start-up 're-medAI' pitched our novel solution for how machine learning could be used to recycle nutrient media and we won the competition!"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
