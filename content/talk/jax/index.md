@@ -53,3 +53,4 @@ projects:
 # Enable math on this page?
 math: true
 ---
+Prepared and taught multiple bioinformatics workshops at [The Jackson Laboratory](https://www.jax.org/) in the US, one of which was to 45 participants
