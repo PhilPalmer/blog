@@ -2,7 +2,6 @@
 title: Metagenomics Research
 summary: Helped in the research & user interviews for a microbiome metagenomics project
 tags:
-- Bioinformatics
 - Lifebit
 - Research
 - Metagenomics
@@ -27,4 +26,4 @@ url_video: ""
 # slides: example
 ---
 
-Helped in the research & user interviews for a [microbiome metagenomics project](https://blog.lifebit.ai/2019/04/23/ux-ui-designer-insights-for-creating-a-user-friendly-clinical-gut-microbiome-ai-based-analysis-platform/), conducted with Science Practice & funded by Innovate UK
+Helped conduct research & user interviews for a [microbiome metagenomics project](https://blog.lifebit.ai/2019/04/23/ux-ui-designer-insights-for-creating-a-user-friendly-clinical-gut-microbiome-ai-based-analysis-platform/), conducted with Science Practice & funded by Innovate UK
