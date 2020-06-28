@@ -37,7 +37,7 @@ date_format = "Jan 2006"
   description = """Developed, maintained & documented bioinformatics pipelines on the CloudOS platform. Regularly support clients & have been instrumental in the delivery of numerous projects."""
 
 [[experience]]
-  title = "BSc Biology"
+  title = "BSc Biology, First Class Honours"
   company = "University of Southampton"
   company_url = ""
   location = "Southampton, UK"
