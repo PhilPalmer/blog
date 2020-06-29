@@ -1,5 +1,5 @@
 ---
-title: World's first clean meat hackathon
+title: Clean meat hackathon
 event: Hackathon
 event_url: https://www.linkedin.com/feed/update/urn:li:activity:6542091105389944832/
 location: Imperial College Advanced Hackspace, UK
