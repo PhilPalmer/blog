@@ -47,6 +47,7 @@ tags:
 - Bioinformatics
 - Data Science
 - DNA
+- Machine learning
 - Python
 - Research
 - SNPs analysis
