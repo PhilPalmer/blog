@@ -53,11 +53,12 @@ I hope to start blogging more frequently about (my) research and PhD-related thi
     - Bioinformatics
     - Data Science
     - Machine learning
-- Statistics
+- Maths
+    - Statistics
     - Probability theory
     - Linear algebra
 
-As time goes on I may expand to cover other interests. These may include effective altruism, tech (start-ups), personal development, productivity, life learnings, reading, as well health and relationships.
+As time goes on I may expand to cover other interests. These may include [effective altruism](https://www.effectivealtruism.org/), tech (start-ups), personal development, productivity, life learnings, reading, travel, health and relationships.
 
 ## Thank you
 I don't really anticipate anyone else reading this blog so I'm flattered if you are :slightly_smiling_face:
