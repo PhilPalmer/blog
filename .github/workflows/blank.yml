@@ -19,3 +19,4 @@ jobs:
         with:
           githubToken: ${{ secrets.PERSONAL_TOKEN }}
           hugoVersion: 0.71.1
+          branch: master
