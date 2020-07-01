@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SNPs analysis on Phil Palmer</title><link>/tags/snps-analysis/</link><description>Recent content in SNPs analysis on Phil Palmer</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/snps-analysis/index.xml" rel="self" type="application/rss+xml"/><item><title>DTC support</title><link>/project/dtc/</link><pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate><guid>/project/dtc/</guid><description>&lt;p>Customer support &amp;amp; bioinformatics pipeline development for Direct To Consumer (DTC) genetics companies such as Sano &amp;amp; Nebula Genomics.&lt;/p>
+&lt;p>For example, I developed and improved multiple bioinformatics pipelines based on user feedback including:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.lifebit.ai/2019/09/20/achieve-federated-standardised-cloud-native-secondary-genomics-analysis-in-a-heartbeat-with-dragen-deploit/">Dragen&lt;/a>
+&lt;ul>
+&lt;li>Developed Nextflow pipeline for running Illumina&amp;rsquo;s Dragen pipeline including indexing, mapping, germline/somatic variant calling &amp;amp; copy number variant (CNV) analysis&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://blog.lifebit.ai/2019/08/29/filling-in-the-blanks-for-direct-to-consumer-genetic-testing-companies-delivering-industrys-fastest-most-scalable-imputation-method/">Imputation&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://blog.lifebit.ai/2019/05/30/what-is-the-best-imputation-pipeline/">Benchmarked&lt;/a> multiple imputation pipelines&lt;/li>
+&lt;li>Greatly improved Lifebit&amp;rsquo;s imputation pipeline by adding &lt;a href="https://github.com/awreynolds/DTC_genomics_convertor/blob/master/validate_23AndMe.R">input validation&lt;/a> &amp;amp; continuous integration testing. This resulted in a highly robust imputation pipeline used in production by direct to consumer genetics companies such as Nebula Genomics and Sano Genetics thousands of times to analyse their customers’ data.&lt;/li>
+&lt;li>Built imputation &lt;a href="https://philpalmer.shinyapps.io/lifebit/">RShiny app&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://blog.lifebit.ai/2019/10/02/how-growing-consumer-demand-for-ancestry-dna-testing-is-creating-new-challenges-for-dtc-testing-companies/">Ancestry&lt;/a>
+&lt;ul>
+&lt;li>Developed Lifebit&amp;rsquo;s intial Ancestry pipeline&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>nf-core/deepvariant</title><link>/project/deepvariant/</link><pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate><guid>/project/deepvariant/</guid><description>&lt;p>Google&amp;rsquo;s &lt;a href="https://github.com/google/deepvariant">DeepVariant&lt;/a> variant caller as a &lt;a href="https://github.com/nf-core/deepvariant">Nextflow pipeline&lt;/a> (~30 stars on GitHub). Developed as one of the first pipelines as part of the open-source &lt;a href="https://blog.lifebit.ai/2018/11/20/developing-nf-core-deepvariant-a-google-variant-caller-a-tutorial-for-nextflow-noobs/">nf-core&lt;/a> community to help enable reproducibility within the wider bioinformatics community&lt;/p></description></item><item><title>Bachelor's Thesis</title><link>/publication/bachelors-thesis/</link><pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate><guid>/publication/bachelors-thesis/</guid><description/></item></channel></rss>

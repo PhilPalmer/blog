@@ -1,1 +1,0 @@
-My personal homepage built using the Hugo Academic Theme: https://philpalmer.github.io/portfolio

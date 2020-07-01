@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Computing on Phil Palmer</title><link>/documentation/computing/</link><description>Recent content in Computing on Phil Palmer</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="/documentation/computing/index.xml" rel="self" type="application/rss+xml"/><item><title>Meaching learning</title><link>/documentation/computing/machine-learning/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>/documentation/computing/machine-learning/</guid><description>&lt;p>Coming soon&amp;hellip;&lt;/p></description></item><item><title>Bash</title><link>/documentation/computing/bash/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>/documentation/computing/bash/</guid><description>&lt;p>Bash is a languauge used in UNIX environments. The basic/most used commands are:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">ls &lt;span style="color:#75715e"># list files&lt;/span>
+cd &lt;span style="color:#75715e"># change directory&lt;/span>
+mkdir &lt;span style="color:#75715e"># make directory&lt;/span>
+touch &lt;span style="color:#75715e"># make file&lt;/span>
+cat &lt;span style="color:#75715e"># print contents of file&lt;/span>
+mv &lt;span style="color:#75715e"># move file&lt;/span>
+cp &lt;span style="color:#75715e"># copy file&lt;/span>
+rm &lt;span style="color:#75715e"># remove file&lt;/span>
+chmod &lt;span style="color:#75715e"># change file permissions&lt;/span>
+man &lt;span style="color:#75715e"># view mannual pages&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can see a more comprehensive list &lt;a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh">here&lt;/a>&lt;/p>
+&lt;h2 id="useful-bash-commands">Useful bash commands&lt;/h2>
+&lt;h3 id="keyboard-shortcuts">Keyboard shortcuts&lt;/h3>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">Ctrl + A &lt;span style="color:#75715e"># move to start of the line&lt;/span>
+Ctrl + E &lt;span style="color:#75715e"># move to end of the line&lt;/span>
+Ctrl + C &lt;span style="color:#75715e"># kill the current command&lt;/span>
+Ctrl + Z &lt;span style="color:#75715e"># put command to sleep (bg &amp;amp; fg used to run in background &amp;amp; foreground respectively)&lt;/span>
+Ctrl + R &lt;span style="color:#75715e"># search previous commands&lt;/span>
+Ctrl + L &lt;span style="color:#75715e"># clear the screen&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="commands">Commands&lt;/h3>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">cd - &lt;span style="color:#75715e"># return to previous directory&lt;/span>
+du -h --max-depth&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> | sort -hr &lt;span style="color:#75715e"># check folder size &amp;amp; return largest to smallest&lt;/span>
+export PATH&lt;span style="color:#f92672">=&lt;/span>$PATH:/usr/bin &lt;span style="color:#75715e"># add /usr/bin to the path&lt;/span>
+find . -name &lt;span style="color:#e6db74">&amp;#34;pattern&amp;#34;&lt;/span> -print &lt;span style="color:#75715e"># print files &amp;amp; directories in the current directory that match pattern&lt;/span>
+tar -xvzf &lt;span style="color:#75715e"># extract .tar.gz file&lt;/span>
+which &lt;span style="color:#75715e"># find location of executable&lt;/span>
+grep &amp;lt;pattern&amp;gt; &amp;lt;filename&amp;gt; &lt;span style="color:#75715e"># find pattern in file&lt;/span>
+sed &lt;span style="color:#e6db74">&amp;#39;s/a/b/g&amp;#39;&lt;/span> &lt;span style="color:#75715e"># replace a with b&lt;/span>
+uname -a &lt;span style="color:#75715e"># shows kernel information&lt;/span>
+df -h &lt;span style="color:#75715e"># return storage/disk spaace information&lt;/span>
+wget &lt;span style="color:#75715e"># download file&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="scripting">Scripting&lt;/h3>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">varname&lt;span style="color:#f92672">=&lt;/span>value &lt;span style="color:#75715e"># declare a variable&lt;/span>
+array&lt;span style="color:#f92672">=(&lt;/span>valA valB valC&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#75715e"># define an array&lt;/span>
+&lt;span style="color:#e6db74">${&lt;/span>array[i]&lt;span style="color:#e6db74">}&lt;/span> &lt;span style="color:#75715e"># displays array&amp;#39;s value for this index&lt;/span>
+&lt;span style="color:#66d9ef">$(&lt;/span>UNIX command&lt;span style="color:#66d9ef">)&lt;/span> &lt;span style="color:#75715e"># command substitution: runs the command and returns standard output&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#66d9ef">if&lt;/span> condition
+&lt;span style="color:#66d9ef">then&lt;/span>
+statements
+&lt;span style="color:#f92672">[&lt;/span>&lt;span style="color:#66d9ef">elif&lt;/span> condition
+&lt;span style="color:#66d9ef">then&lt;/span> statements...&lt;span style="color:#f92672">]&lt;/span>
+&lt;span style="color:#f92672">[&lt;/span>&lt;span style="color:#66d9ef">else&lt;/span>
+statements&lt;span style="color:#f92672">]&lt;/span>
+&lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;span style="color:#66d9ef">for&lt;/span> x in &lt;span style="color:#f92672">{&lt;/span>1..10&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">do&lt;/span>
+statements
+&lt;span style="color:#66d9ef">done&lt;/span>
+&lt;span style="color:#66d9ef">for&lt;/span> name &lt;span style="color:#f92672">[&lt;/span>in list&lt;span style="color:#f92672">]&lt;/span>
+&lt;span style="color:#66d9ef">do&lt;/span>
+statements that can use $name
+&lt;span style="color:#66d9ef">done&lt;/span>
+&lt;span style="color:#66d9ef">while&lt;/span> condition; &lt;span style="color:#66d9ef">do&lt;/span>
+statements
+&lt;span style="color:#66d9ef">done&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="other">Other&lt;/h3>
+&lt;p>Store official binaries in: &lt;code>/usr/bin&lt;/code>
+Store unofficial binaries in: &lt;code>/usr/local/bin&lt;/code>&lt;/p>
+&lt;h3 id="tools">Tools&lt;/h3>
+&lt;p>Use &lt;a href="https://github.com/axel-download-accelerator/axel">axel&lt;/a> to download large files in parrallel&lt;/p>
+&lt;h2 id="awk">awk&lt;/h2>
+&lt;p>Append chr to bed file:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">awk &lt;span style="color:#e6db74">&amp;#39;{print &amp;#34;chr&amp;#34; $0;}&amp;#39;&lt;/span> genes_hg19.bed &amp;gt; chr_genes_hg19.bed
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Print columns from comma separated file:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">awk -F&lt;span style="color:#e6db74">&amp;#39;,&amp;#39;&lt;/span> &lt;span style="color:#e6db74">&amp;#39;{print $3}&amp;#39;&lt;/span> myfile.txt
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Read file as tab delimited:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">awk &lt;span style="color:#e6db74">&amp;#39;BEGIN {OFS = FS} {print $3}&amp;#39;&lt;/span> file.tsv
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Print columns tab separated:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">awk &lt;span style="color:#e6db74">&amp;#39;{print $1,&amp;#34;\t&amp;#34;,$2}&amp;#39;&lt;/span> file.tsv
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Print lines where the value in the first column is true:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">awk &lt;span style="color:#e6db74">&amp;#39;$1 == &amp;#34;true&amp;#34; {print $0}&amp;#39;&lt;/span> file.txt
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="tmux">tmux&lt;/h2>
+&lt;p>Tmux lets you run multiple sessions/programs within one terminal. On Mac &lt;a href="https://www.iterm2.com/">iTerm2&lt;/a> has good support for tmux&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#75715e"># open new tmux session&lt;/span>
+tmux
+&lt;span style="color:#75715e"># run command&lt;/span>
+&lt;span style="color:#75715e"># disconnect&lt;/span>
+Ctrl + B, D
+&lt;span style="color:#75715e"># list sessions&lt;/span>
+tmux ls
+&lt;span style="color:#75715e"># attach session&lt;/span>
+tmux attach
+&lt;span style="color:#75715e"># or&lt;/span>
+tmux a -t myname
+&lt;span style="color:#75715e"># leave&lt;/span>
+exit
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>See a more complete list of tmux commands &lt;a href="https://gist.github.com/MohamedAlaa/2961058">here&lt;/a>&lt;/p></description></item><item><title>Conda</title><link>/documentation/computing/conda/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>/documentation/computing/conda/</guid><description>&lt;p>&lt;img src="../images/conda_logo.svg" alt="conda_logo">&lt;/p>
+&lt;p>&lt;em>Conda is a package management system that makes installing tools trivial by installing all of their dependencies.&lt;/em> See the &lt;a href="https://docs.conda.io/en/latest/">official documentation&lt;/a> and &lt;a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">installation details&lt;/a>&lt;/p>
+&lt;h2 id="install-conda-package">Install conda package&lt;/h2>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">conda install -c $channel &lt;span style="color:#e6db74">${&lt;/span>package&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>version&lt;span style="color:#e6db74">}&lt;/span>
+conda install -c bioconda fastqc&lt;span style="color:#f92672">=&lt;/span>0.11.8 &lt;span style="color:#75715e"># example&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="create-conda-environment">Create conda environment&lt;/h2>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">conda env create --name $env_name --file environment.yml
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="save-conda-environment">Save conda environment&lt;/h2>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">conda env export --no-builds | grep -v &lt;span style="color:#e6db74">&amp;#34;^prefix: &amp;#34;&lt;/span> &amp;gt; environment.yml
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="activate-conda-environment">Activate conda environment&lt;/h2>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">source activatate $env_name
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docker</title><link>/documentation/computing/docker/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>/documentation/computing/docker/</guid><description>&lt;p>Coming soon&amp;hellip;&lt;/p></description></item><item><title>Git</title><link>/documentation/computing/git/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>/documentation/computing/git/</guid><description>&lt;p>Coming soon&amp;hellip;&lt;/p></description></item><item><title>Nextflow</title><link>/documentation/computing/nextflow/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>/documentation/computing/nextflow/</guid><description>&lt;p>&lt;img src="../images/nextflow_logo.png" alt="nextflow_logo">&lt;/p>
+&lt;p>&lt;em>Nextflow is a workflow management system that allows you to build highly parallelizable &amp;amp; scalable computational pipelines&lt;/em>&lt;/p>
+&lt;h1 id="advatanges">Advatanges&lt;/h1>
+&lt;p>Advantages of using Nextflow (and workflow managers in general) is that they help make workflows more:&lt;/p>
+&lt;ul>
+&lt;li>Portable
+&lt;ul>
+&lt;li>Thanks in part to it&amp;rsquo;s built-in support of containers Nextflow pipelines can be run in a portable manner across different instructure be it Cloud, local or HPC&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Reproducible
+&lt;ul>
+&lt;li>Thanks in part to it&amp;rsquo;s built-in support of containers such as Docker &amp;amp; Singularity&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Scalable
+&lt;ul>
+&lt;li>Thanks in part to Nextflow&amp;rsquo;s built-in parallelism as it&amp;rsquo;s built on the data flow programming model&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>There are other workflow management systems such as &lt;a href="https://snakemake.readthedocs.io/en/stable/">Snakemake&lt;/a>, &lt;a href="https://www.commonwl.org/">CWL&lt;/a> and &lt;a href="https://github.com/openwdl/wdl#getting-started-with-wdl">WDL&lt;/a>, however, I am by far more familiar with &lt;a href="https://www.nextflow.io/index.html">Nextflow&lt;/a>. Some of the main advantages of each are that Nextflow benefits from lots of community support (see &lt;a href="https://nf-co.re/">nf-core&lt;/a>), Snakemake is written in &lt;a href="../python">Python&lt;/a> and CWL/WDL benefits from support from the &lt;a href="https://www.broadinstitute.org/">Broad Institute&lt;/a>.&lt;/p>
+&lt;h1 id="basics">Basics&lt;/h1>
+&lt;p>The basic pipeline structure is as follows:&lt;/p>
+&lt;ol>
+&lt;li>Pipeline (main script)
+&lt;ul>
+&lt;li>Channels&lt;/li>
+&lt;li>Processes
+&lt;ul>
+&lt;li>Input&lt;/li>
+&lt;li>Output&lt;/li>
+&lt;li>Script&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Configuration&lt;/li>
+&lt;/ol>
+&lt;p>See the &lt;a href="https://www.nextflow.io/docs/latest/index.html">Official documentation&lt;/a> &amp;amp; &lt;a href="https://github.com/lifebit-ai/jax-tutorial">Nextflow tutorial&lt;/a>&lt;/p>
+&lt;h1 id="patterns">Patterns&lt;/h1>
+&lt;p>You can find Nextflow scripts for each of the examples here: &lt;a href="https://github.com/PhilPalmer/docs/tree/master/computing/nextflow-scripts">https://github.com/PhilPalmer/docs/tree/master/computing/nextflow-scripts&lt;/a>&lt;/p>
+&lt;p>&lt;em>Inspired by &lt;a href="http://nextflow-io.github.io/patterns/index.html">Nextflow patterns&lt;/a>&lt;/em>&lt;/p>
+&lt;h2 id="inputs">Inputs&lt;/h2>
+&lt;h3 id="split-text-input">Split text input&lt;/h3>
+&lt;p>Create a channel from a plain text file split line by line&lt;/p>
+&lt;pre>&lt;code>Channel
+.fromPath(params.regions)
+.ifEmpty { exit 1, &amp;quot;Cannot find file : ${params.regions}&amp;quot; }
+.splitText()
+.map { it -&amp;gt; it.trim() }
+.set { regions }
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run split_text_input.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="csv-input">CSV input&lt;/h3>
+&lt;p>Create a channel from a CSV file input&lt;/p>
+&lt;pre>&lt;code>Channel
+.fromPath(params.vcf_paths)
+.ifEmpty { exit 1, &amp;quot;Cannot find CSV file : ${params.vcf_paths}&amp;quot; }
+.splitCsv(skip:1)
+.map { sample_id,vcf,index -&amp;gt; [sample_id,file(vcf),file(index)] }
+.set { vcfs }
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run csv_input.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="reusable-channels">Reusable channels&lt;/h3>
+&lt;p>Nextflow consumes (queue) channels meaning that they are consumed on use. However, it is possible to prevent needing to duplicate channels by creating value channels instead like so!&lt;/p>
+&lt;pre>&lt;code>inputChannel = Channel.value(file(params.input_path))
+// Channel can be used multiple times
+inputChannel.println()
+inputChannel.println()
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run reusable_channels.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="channel-duplication">Channel duplication&lt;/h3>
+&lt;p>Sometimes you may need to duplicate a channel. This is espeically true if it&amp;rsquo;s a channel which contains multiple values (and/or is a queue channel) because these are consumed by Nextflow on use&lt;/p>
+&lt;pre>&lt;code>Channel
+.fromPath(params.input_path)
+.ifEmpty { exit 1, &amp;quot;${params.input_path} not found&amp;quot;}
+.into { inputChannel; inputChannel1; inputChannel2 }
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run channel_duplication.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="get-basename">Get basename&lt;/h3>
+&lt;p>Get the basename (i.e. the name filename minus the file extension) of a file in a channel. &lt;em>You can also use &lt;code>simpleName&lt;/code> to get everything prior to the first period (&lt;code>.&lt;/code>)&lt;/em>&lt;/p>
+&lt;pre>&lt;code>Channel
+.fromPath(params.input_path)
+.map { file -&amp;gt; [file.baseName, file] }
+.ifEmpty { exit 1, &amp;quot;${params.input_path} not found&amp;quot;}
+.set { inputChannel }
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run get_basename.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="input-validation">Input validation&lt;/h3>
+&lt;pre>&lt;code>if (!params.important_parameter) exit 1, &amp;quot;The params `--important_parameter` has not been set.\n\tPlease provide a valid value for this parameter&amp;quot;
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run input_validation.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="processes">Processes&lt;/h2>
+&lt;h3 id="conditional-input-files">Conditional input files&lt;/h3>
+&lt;p>Nextflow does not like having conditional input files for processes. Fortunately you can use optional input files like so&lt;/p>
+&lt;pre>&lt;code>optional_input_path = params.optional_input_path ? params.optional_input_path : 'data/no_file.txt'
+Channel
+.fromPath(optional_input_path)
+.ifEmpty { exit 1, &amp;quot;${optional_input_path} not found&amp;quot;}
+.set { optionalInputChannel }
+process test {
+echo true
+input:
+file(optional_input) from optionalInputChannel
+script:
+optional_flag = optional_input != 'no_file.txt' ? &amp;quot;--optional_input $optional_input&amp;quot; : ''
+&amp;quot;&amp;quot;&amp;quot;
+some_command.sh $optional_flag
+&amp;quot;&amp;quot;&amp;quot;
+}
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run optional_input.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="conditional-flags">Conditional flags&lt;/h3>
+&lt;p>Here the &lt;code>optional_flag&lt;/code> will only be present if the user has set the &lt;code>optional_flag&lt;/code> Nextflow parameter&lt;/p>
+&lt;pre>&lt;code>process test {
+echo true
+script:
+optional_flag = params.optional_flag ? &amp;quot;--optional_flag $params.optional_flag&amp;quot; : ''
+&amp;quot;&amp;quot;&amp;quot;
+some_command.sh $optional_flag
+&amp;quot;&amp;quot;&amp;quot;
+}
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run optional_input.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="extra-flags">Extra flags&lt;/h3>
+&lt;h3 id="last-index-of">Last index of&lt;/h3>
+&lt;hr>
+&lt;h2 id="transforming-operators">Transforming operators&lt;/h2>
+&lt;h3 id="reduce-channel">Reduce channel&lt;/h3>
+&lt;p>&lt;a href="https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L157">https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L157&lt;/a>&lt;/p>
+&lt;h3 id="complex-mapping">Complex mapping&lt;/h3>
+&lt;hr>
+&lt;h2 id="debugging">Debugging&lt;/h2>
+&lt;h3 id="printing-channel">Printing channel&lt;/h3>
+&lt;h3 id="touch-files">Touch files&lt;/h3>
+&lt;hr>
+&lt;h2 id="output">Output&lt;/h2>
+&lt;h3 id="publishdir">PublishDir&lt;/h3>
+&lt;p>&lt;a href="https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L204-L210">https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L204-L210&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="groovy">Groovy&lt;/h2>
+&lt;h3 id="helper-functions">Helper functions&lt;/h3>
+&lt;pre>&lt;code>// define helper functions
+def isMode(mode) {
+params.mode.toLowerCase().contains(mode)
+}
+def isTsv() {
+params.reads.endsWith('tsv')
+}
+def get_pairs_simplename(simplename) {
+simplename = simplename.endsWith('_1') ? simplename.substring(0, simplename.length() - 2) : simplename
+simplename = simplename.endsWith('_R1') ? simplename.substring(0, simplename.length() - 3) : simplename
+return simplename
+}
+&lt;/code>&lt;/pre>&lt;hr>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;h3 id="genomes-config">Genomes config&lt;/h3>
+&lt;h3 id="cloud-create">Cloud create&lt;/h3>
+&lt;p>You can use Nextflow to launch an AWS instance (in this case one to run &lt;a href="https://aws.amazon.com/marketplace/pp/Illumina-Inc-DRAGEN-Complete-Suite/B07CZ3F5HY">Dragen&lt;/a>)&lt;/p>
+&lt;p>&lt;code>cloud-spot.config&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>aws {
+accessKey = ''
+secretKey = ''
+region = 'eu-west-1'
+}
+cloud {
+imageId = 'ami-0ba4b94467989e99a'
+instanceType = 'f1.4xlarge'
+userName = 'centos'
+keyName = 'dragen'
+bootStorageSize = '100 GB'
+}
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow -c cloud-spot.config cloud create cluster_name -c &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="tips">Tips&lt;/h1>
+&lt;ul>
+&lt;li>&lt;code>nextflow console&lt;/code>&lt;/li>
+&lt;li>&lt;code>log.info&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h1 id="useful-operators">Useful operators&lt;/h1>
+&lt;p>&lt;code>groupTuple()&lt;/code>&lt;/p>
+&lt;p>&lt;code>combine()&lt;/code> (by)&lt;/p>
+&lt;p>&lt;code>map()&lt;/code>
+Swiss army knife
+Re-order or reduce channels (although Nextflow also provides a &lt;code>reduce&lt;/code> function)&lt;/p>
+&lt;p>&lt;code>set()&lt;/code>&lt;/p>
+&lt;p>&lt;code>into()&lt;/code>&lt;/p>
+&lt;p>&lt;code>.set()&lt;/code>&lt;/p>
+&lt;p>&lt;a href="https://www.nextflow.io/docs/latest/operator.html#collect">&lt;code>collect()&lt;/code>&lt;/a>&lt;/p>
+&lt;p>&lt;code>splitCsv()&lt;/code>&lt;/p>
+&lt;p>&lt;code>merge()&lt;/code>&lt;/p>
+&lt;p>&lt;code>flatten()&lt;/code>&lt;/p>
+&lt;p>&lt;code>choice()&lt;/code>&lt;/p></description></item><item><title>Python</title><link>/documentation/computing/python/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>/documentation/computing/python/</guid><description>&lt;p>Coming soon&amp;hellip;&lt;/p></description></item><item><title>R</title><link>/documentation/computing/r/</link><pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate><guid>/documentation/computing/r/</guid><description>&lt;p>Coming soon&amp;hellip;&lt;/p></description></item></channel></rss>
