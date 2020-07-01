@@ -1,20 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Phil Palmer</title><link>https://philpalmer.github.io/documentation/</link><description>Recent content in Docs on Phil Palmer</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2019 00:00:00 +0100</lastBuildDate><atom:link href="https://philpalmer.github.io/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview</title><link>https://philpalmer.github.io/documentation/biology/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/documentation/biology/</guid><description/></item><item><title>Computing</title><link>https://philpalmer.github.io/documentation/computing/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/documentation/computing/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;p>💻 Bioinformatics, Data Science, Tools &amp;amp; Infrastructure&lt;/p></description></item><item><title>Maths</title><link>https://philpalmer.github.io/documentation/maths/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/documentation/maths/</guid><description/></item><item><title/><link>https://philpalmer.github.io/documentation/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/documentation/readme/</guid><description>&lt;h1 id="docs-">docs 📚&lt;/h1>
-&lt;p>If you think anything is wrong or can be improved please don&amp;rsquo;t hesitate to submit a PR&lt;/p>
-&lt;h2 id="bioinformatics">Bioinformatics&lt;/h2>
-&lt;p>&lt;a href="conda">Conda&lt;/a>&lt;/p>
-&lt;p>&lt;a href="nextflow">Nextflow&lt;/a>&lt;/p>
-&lt;h2 id="data-science">Data science&lt;/h2>
-&lt;p>&lt;a href="machine-learning">Machine learning&lt;/a>&lt;/p>
-&lt;p>&lt;a href="python">Python&lt;/a>&lt;/p>
-&lt;p>&lt;a href="r">R&lt;/a>&lt;/p>
-&lt;h2 id="tools">Tools&lt;/h2>
-&lt;p>&lt;a href="bash">Bash&lt;/a>&lt;/p>
-&lt;p>&lt;a href="docker">Docker&lt;/a>&lt;/p>
-&lt;p>&lt;a href="git">Git&lt;/a>&lt;/p>
-&lt;h2 id="infrastructure---localcloudhpc">Infrastructure - Local/Cloud/HPC&lt;/h2>
-&lt;p>&lt;a href="aws">AWS&lt;/a>&lt;/p>
-&lt;p>&lt;a href="development-environment">Development environment&lt;/a>&lt;/p>
-&lt;p>&lt;a href="gcloud">GCloud&lt;/a>&lt;/p>
-&lt;p>&lt;a href="hpc">HPC&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Phil Palmer</title><link>https://philpalmer.github.io/blog/documentation/</link><description>Recent content in Docs on Phil Palmer</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><atom:link href="https://philpalmer.github.io/blog/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview</title><link>https://philpalmer.github.io/blog/documentation/biology/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/documentation/biology/</guid><description/></item><item><title>Computing</title><link>https://philpalmer.github.io/blog/documentation/computing/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/documentation/computing/</guid><description>&lt;!-- ## Bioinformatics
+[Conda](conda)
+[Nextflow](nextflow)
+## Data science
+[Machine learning](machine-learning)
+[Python](python)
+[R](r)
+## Tools
+[Bash](bash)
+[Docker](docker)
+[Git](git)
+## Infrastructure - Local/Cloud/HPC
+[AWS](aws)
+[Development environment](development-environment)
+[GCloud](gcloud)
+[HPC](hpc) --&gt;
+&lt;p&gt;💻 Bioinformatics, Data Science, Tools &amp;amp; Infrastructure&lt;/p&gt;</description></item><item><title>Maths</title><link>https://philpalmer.github.io/blog/documentation/maths/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/documentation/maths/</guid><description/></item><item><title/><link>https://philpalmer.github.io/blog/documentation/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/documentation/readme/</guid><description>
+&lt;h1 id=&#34;docs&#34;&gt;docs 📚&lt;/h1&gt;
+&lt;p&gt;If you think anything is wrong or can be improved please don&amp;rsquo;t hesitate to submit a PR&lt;/p&gt;
+&lt;h2 id=&#34;bioinformatics&#34;&gt;Bioinformatics&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;conda&#34; target=&#34;_blank&#34;&gt;Conda&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;nextflow&#34; target=&#34;_blank&#34;&gt;Nextflow&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;data-science&#34;&gt;Data science&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;machine-learning&#34; target=&#34;_blank&#34;&gt;Machine learning&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;python&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;r&#34; target=&#34;_blank&#34;&gt;R&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;bash&#34; target=&#34;_blank&#34;&gt;Bash&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;docker&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;git&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;infrastructure-local-cloud-hpc&#34;&gt;Infrastructure - Local/Cloud/HPC&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;aws&#34; target=&#34;_blank&#34;&gt;AWS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;development-environment&#34; target=&#34;_blank&#34;&gt;Development environment&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;gcloud&#34; target=&#34;_blank&#34;&gt;GCloud&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;hpc&#34; target=&#34;_blank&#34;&gt;HPC&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

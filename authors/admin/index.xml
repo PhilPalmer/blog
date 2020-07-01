@@ -1,40 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Phil Palmer</title><link>https://philpalmer.github.io/authors/admin/</link><description>Recent content on Phil Palmer</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://philpalmer.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello, world!</title><link>https://philpalmer.github.io/post/my-frst-blog-post/</link><pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/post/my-frst-blog-post/</guid><description>&lt;p>My opinion on blogging to paraphrase Winston Churchill - &lt;em>“Never have so many, written so much, read by so few.”&lt;/em>&lt;/p>
-&lt;h2 id="so-why-on-earth-have-i-started-a-blog">So why on Earth have I started a blog?&lt;/h2>
-&lt;p>I make a lot of notes and often find myself referring back to these including programming commands etc. I figured I will store them here &amp;amp; open-source them. This is for three main purposes:&lt;/p>
-&lt;ol>
-&lt;li>To help me organise my thoughts and retain the things I learn&lt;/li>
-&lt;li>A central place to store &amp;amp; refer back to notes&lt;/li>
-&lt;li>For other people to use on the small chance that they may be useful for others&lt;/li>
-&lt;/ol>
-&lt;h2 id="who-am-i">Who am I?&lt;/h2>
-&lt;p>I am a bioinformatician and PhD student at the University of Cambridge&lt;/p>
-&lt;h2 id="what-will-i-write-about">What will I write about&lt;/h2>
-&lt;p>I hope to start blogging more frequently about (my) research and PhD-related things to document stuff that I learn. I&amp;rsquo;ll likely cover topics such as:&lt;/p>
-&lt;ul>
-&lt;li>Biology
-&lt;ul>
-&lt;li>Immunology&lt;/li>
-&lt;li>Vaccines&lt;/li>
-&lt;li>Viruses&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Computing
-&lt;ul>
-&lt;li>Bioinformatics&lt;/li>
-&lt;li>Data Science&lt;/li>
-&lt;li>Machine learning&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Maths
-&lt;ul>
-&lt;li>Statistics&lt;/li>
-&lt;li>Probability theory&lt;/li>
-&lt;li>Linear algebra&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>As time goes on I may expand to cover other interests. These may include &lt;a href="https://www.effectivealtruism.org/">effective altruism&lt;/a>, tech (start-ups), personal development, productivity, life learnings, reading, travel, health and relationships.&lt;/p>
-&lt;h2 id="thank-you">Thank you&lt;/h2>
-&lt;p>I don&amp;rsquo;t really anticipate anyone else reading this blog so I&amp;rsquo;m flattered if you are 🙂&lt;/p>
-&lt;p>If you’re interested in any of the topics above then you’re in the right place. I will generally try and keep my posts short, fun &amp;amp; practical. I would love any feedback you might have so please don’t hesitate to &lt;a href="../../#contact">reach out&lt;/a>.&lt;/p>
-&lt;p>Thanks for reading!&lt;/p></description></item><item><title>Bachelor's Thesis</title><link>https://philpalmer.github.io/publication/bachelors-thesis/</link><pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/publication/bachelors-thesis/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Phil Palmer</title><link>https://philpalmer.github.io/blog/authors/admin/</link><description>Recent content on Phil Palmer</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://philpalmer.github.io/blog/authors/admin/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello, world!</title><link>https://philpalmer.github.io/blog/post/my-frst-blog-post/</link><pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/post/my-frst-blog-post/</guid><description>
+&lt;p&gt;My opinion on blogging to paraphrase Winston Churchill - &lt;em&gt;“Never have so many, written so much, read by so few.”&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;so-why-on-earth-have-i-started-a-blog&#34;&gt;So why on Earth have I started a blog?&lt;/h2&gt;
+&lt;p&gt;I make a lot of notes and often find myself referring back to these including programming commands etc. I figured I will store them here &amp;amp; open-source them. This is for three main purposes:&lt;/p&gt;
+&lt;p&gt;1) To help me organise my thoughts and retain the things I learn
+2) A central place to store &amp;amp; refer back to notes
+3) For other people to use on the small chance that they may be useful for others&lt;/p&gt;
+&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h2&gt;
+&lt;p&gt;I am a bioinformatician and PhD student at the University of Cambridge&lt;/p&gt;
+&lt;h2 id=&#34;what-will-i-write-about&#34;&gt;What will I write about&lt;/h2&gt;
+&lt;p&gt;I hope to start blogging more frequently about (my) research and PhD-related things to document stuff that I learn. I&amp;rsquo;ll likely cover topics such as:
+- Biology
+- Immunology
+- Vaccines
+- Viruses
+- Computing
+- Bioinformatics
+- Data Science
+- Machine learning
+- Maths
+- Statistics
+- Probability theory
+- Linear algebra&lt;/p&gt;
+&lt;p&gt;As time goes on I may expand to cover other interests. These may include &lt;a href=&#34;https://www.effectivealtruism.org/&#34; target=&#34;_blank&#34;&gt;effective altruism&lt;/a&gt;, tech (start-ups), personal development, productivity, life learnings, reading, travel, health and relationships.&lt;/p&gt;
+&lt;h2 id=&#34;thank-you&#34;&gt;Thank you&lt;/h2&gt;
+&lt;p&gt;I don&amp;rsquo;t really anticipate anyone else reading this blog so I&amp;rsquo;m flattered if you are 🙂&lt;/p&gt;
+&lt;p&gt;If you’re interested in any of the topics above then you’re in the right place. I will generally try and keep my posts short, fun &amp;amp; practical. I would love any feedback you might have so please don’t hesitate to &lt;a href=&#34;../../#contact&#34;&gt;reach out&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</description></item><item><title>Bachelor&#39;s Thesis</title><link>https://philpalmer.github.io/blog/publication/bachelors-thesis/</link><pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/publication/bachelors-thesis/</guid><description/></item></channel></rss>
