@@ -32,11 +32,12 @@ My opinion on blogging to paraphrase Winston Churchill - *“Never have so many,
 
 ## So why on Earth have I started a blog?
 
-I make a lot of notes and often find myself referring back to these including programming commands etc. I figured I will store them here & open-source them. This is for three main purposes:
+I make a lot of notes and often find myself referring back to these including programming commands etc. I figured I will store them here in a centralised place & open-source them.
 
-1) To help me organise my thoughts and retain the things I learn
-2) A central place to store & refer back to notes
-3) For other people to use on the small chance that they may be useful for others
+To see why I've started a blog it makes sense to look at who I’ve started a blog for:
+1) **You** - To provide as much value as I can to you, the reader
+2) **Me** - To help organise my thoughts, retain the things I learn & improve my writing 
+3) **The world** - To help actually improve it by using reason and taking action, not just by good intentions alone. Ambitious I know :sweat_smile:
 
 ## Who am I?
 
@@ -64,5 +65,7 @@ As time goes on I may expand to cover other interests. These may include [effect
 I don't really anticipate anyone else reading this blog so I'm flattered if you are :slightly_smiling_face:
 
 If you’re interested in any of the topics above then you’re in the right place. I will generally try and keep my posts short, fun & practical. I would love any feedback you might have so please don’t hesitate to [reach out](../../#contact).
+
+Disclaimer: Many of the blog posts will likely not be as throughly researched and well presented as I would like. This is in the interest of time in order to publish more content.
 
 Thanks for reading!
