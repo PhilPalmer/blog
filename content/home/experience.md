@@ -34,7 +34,11 @@ date_format = "Jan 2006"
   location = "London, UK"
   date_start = "2018-07-01"
   date_end = "2020-07-01"
-  description = """Developed, maintained & documented bioinformatics pipelines on the CloudOS platform. Regularly support clients & have been instrumental in the delivery of numerous projects."""
+  description = """
+  Helped the company triple in size (in both employees and valuation) and was instrumental in numerous key projects such as the delivery of the [Genomics England Research Platform for COVID-19 response](https://www.genomicsengland.co.uk/research-environment-covid-19-lifebit-aws/).
+
+  I was invloved end-to-end delivery of projects, everything from gathering technical requirements, to building bioinformatics pipelines and providing professional technical customer support.
+  """
 
 [[experience]]
   title = "BSc Biology, First Class Honours"
