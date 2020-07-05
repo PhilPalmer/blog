@@ -58,9 +58,12 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/PhilPalmer
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations
+#- icon: google-scholar
+#  icon_pack: ai
+#  link: https://scholar.google.co.uk/citations
+- icon: goodreads
+  icon_pack: fab
+  link: https://www.goodreads.com/user/show/82625909-phil-palmer
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv
