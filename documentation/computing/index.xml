@@ -191,7 +191,9 @@ inputChannel.println()
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run input_validation.nf
 &lt;/code>&lt;/pre>&lt;/div>&lt;hr>
 &lt;h2 id="processes">Processes&lt;/h2>
-&lt;h3 id="conditional-input-files">Conditional input files&lt;/h3>
+&lt;h3 id="export-bash-varialbe-to-nextflow">Export bash varialbe to Nextflow&lt;/h3>
+&lt;pre>&lt;code>env()
+&lt;/code>&lt;/pre>&lt;h3 id="conditional-input-files">Conditional input files&lt;/h3>
 &lt;p>Nextflow does not like having conditional input files for processes. Fortunately you can use optional input files like so&lt;/p>
 &lt;pre>&lt;code>optional_input_path = params.optional_input_path ? params.optional_input_path : 'data/no_file.txt'
 Channel
@@ -211,7 +213,7 @@ some_command.sh $optional_flag
 &lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run optional_input.nf
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="conditional-flags">Conditional flags&lt;/h3>
-&lt;p>Here the &lt;code>optional_flag&lt;/code> will only be present if the user has set the &lt;code>optional_flag&lt;/code> Nextflow parameter&lt;/p>
+&lt;p>Here the &lt;code>optional_flag&lt;/code> will only be present if the user has set the &lt;code>optional_flag&lt;/code> Nextflow parameter, otherwise it will be equal to an empty string&lt;/p>
 &lt;pre>&lt;code>process test {
 echo true
 script:
@@ -221,13 +223,42 @@ some_command.sh $optional_flag
 &amp;quot;&amp;quot;&amp;quot;
 }
 &lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run optional_input.nf
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run optional_flag.nf
 &lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="extra-flags">Extra flags&lt;/h3>
-&lt;h3 id="last-index-of">Last index of&lt;/h3>
-&lt;hr>
+&lt;p>If you have many conditional input parameters and prefer to store them in a single variable you can use something like &lt;code>extra_flags&lt;/code> here&lt;/p>
+&lt;pre>&lt;code>process test {
+echo true
+script:
+extra_flags = ''
+if ( params.optional_flag ) { extra_flags += &amp;quot; --optional_flag ${params.optional_flag}&amp;quot; }
+if ( params.optional_flag2 ) { extra_flags += &amp;quot; --optional_flag2 ${params.optional_flag2}&amp;quot; }
+if ( params.optional_flag3 ) { extra_flags += &amp;quot; --optional_flag3 ${params.optional_flag3}&amp;quot; }
+&amp;quot;&amp;quot;&amp;quot;
+some_command.sh $extra_flags
+&amp;quot;&amp;quot;&amp;quot;
+}
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">nextflow run extra_flags.nf
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="collect">Collect&lt;/h3>
+&lt;p>Collect can be used to group multiple files in the same channel and group them together. Here multiple files from the &lt;code>vcfs&lt;/code> channel are all used as input to the same process and added one per line to a plain text file&lt;/p>
+&lt;pre>&lt;code>process test {
+input:
+file(vcfs) from vcfs.collect()
+script:
+&amp;quot;&amp;quot;&amp;quot;
+echo &amp;quot;${vcfs.join(&amp;quot;\n&amp;quot;)}&amp;quot; &amp;gt; vcfs.txt
+&amp;quot;&amp;quot;&amp;quot;
+}
+&lt;/code>&lt;/pre>&lt;p>Run it:&lt;/p>
+&lt;pre>&lt;code>nextflow run collect.nf
+&lt;/code>&lt;/pre>&lt;hr>
 &lt;h2 id="transforming-operators">Transforming operators&lt;/h2>
-&lt;h3 id="reduce-channel">Reduce channel&lt;/h3>
-&lt;p>&lt;a href="https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L157">https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L157&lt;/a>&lt;/p>
+&lt;h3 id="collect-file">Collect file&lt;/h3>
+&lt;pre>&lt;code>paired_info
+.collectFile(name: &amp;quot;${params.outdir}/QC/tcga/paired_info.csv&amp;quot;, keepHeader: true, skip: 1)
+&lt;/code>&lt;/pre>&lt;h3 id="reduce-channel">Reduce channel&lt;/h3>
+&lt;pre>&lt;code>vcfChannelReport = vcfChannelSnps.map { name, vcf -&amp;gt; vcf}
+&lt;/code>&lt;/pre>&lt;p>&lt;a href="https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L157">https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L157&lt;/a>&lt;/p>
 &lt;h3 id="complex-mapping">Complex mapping&lt;/h3>
 &lt;hr>
 &lt;h2 id="debugging">Debugging&lt;/h2>
@@ -239,6 +270,8 @@ some_command.sh $optional_flag
 &lt;p>&lt;a href="https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L204-L210">https://github.com/lifebit-ai/genetic-traits/blob/master/main.nf#L204-L210&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h2 id="groovy">Groovy&lt;/h2>
+&lt;h3 id="last-index-of">Last index of&lt;/h3>
+&lt;p>Can be used to get the basename of a file from URL for example&lt;/p>
 &lt;h3 id="helper-functions">Helper functions&lt;/h3>
 &lt;pre>&lt;code>// define helper functions
 def isMode(mode) {

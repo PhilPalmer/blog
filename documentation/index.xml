@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Phil Palmer</title><link>https://philpalmer.github.io/blog/documentation/</link><description>Recent content in Docs on Phil Palmer</description><generator>Source Themes academia (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2019 00:00:00 +0100</lastBuildDate><atom:link href="https://philpalmer.github.io/blog/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview</title><link>https://philpalmer.github.io/blog/documentation/biology/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/documentation/biology/</guid><description/></item><item><title>Computing</title><link>https://philpalmer.github.io/blog/documentation/computing/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/documentation/computing/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;!-- raw HTML omitted -->
 &lt;p>💻 Bioinformatics, Data Science, Tools &amp;amp; Infrastructure&lt;/p></description></item><item><title>Maths</title><link>https://philpalmer.github.io/blog/documentation/maths/</link><pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/documentation/maths/</guid><description/></item><item><title/><link>https://philpalmer.github.io/blog/documentation/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://philpalmer.github.io/blog/documentation/readme/</guid><description>&lt;h1 id="docs-">docs 📚&lt;/h1>
+&lt;p>Documentation for the things that I learn&lt;/p>
+&lt;p>To see a rendered version go to: &lt;a href="https://philpalmer.github.io/blog/documentation/">https://philpalmer.github.io/blog/documentation/&lt;/a>&lt;/p>
 &lt;p>If you think anything is wrong or can be improved please don&amp;rsquo;t hesitate to submit a PR&lt;/p>
+&lt;p>&lt;img src="computing/images/preview.png" alt="preview">&lt;/p>
 &lt;h2 id="bioinformatics">Bioinformatics&lt;/h2>
-&lt;p>&lt;a href="conda">Conda&lt;/a>&lt;/p>
-&lt;p>&lt;a href="nextflow">Nextflow&lt;/a>&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> Conda&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> Nextflow&lt;!-- raw HTML omitted -->&lt;/p>
 &lt;h2 id="data-science">Data science&lt;/h2>
-&lt;p>&lt;a href="machine-learning">Machine learning&lt;/a>&lt;/p>
-&lt;p>&lt;a href="python">Python&lt;/a>&lt;/p>
-&lt;p>&lt;a href="r">R&lt;/a>&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->🤖 Machine learning&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> Python&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> R&lt;!-- raw HTML omitted -->&lt;/p>
 &lt;h2 id="tools">Tools&lt;/h2>
-&lt;p>&lt;a href="bash">Bash&lt;/a>&lt;/p>
-&lt;p>&lt;a href="docker">Docker&lt;/a>&lt;/p>
-&lt;p>&lt;a href="git">Git&lt;/a>&lt;/p>
-&lt;h2 id="infrastructure---localcloudhpc">Infrastructure - Local/Cloud/HPC&lt;/h2>
-&lt;p>&lt;a href="aws">AWS&lt;/a>&lt;/p>
-&lt;p>&lt;a href="development-environment">Development environment&lt;/a>&lt;/p>
-&lt;p>&lt;a href="gcloud">GCloud&lt;/a>&lt;/p>
-&lt;p>&lt;a href="hpc">HPC&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> Bash&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> Docker&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted --> Git&lt;!-- raw HTML omitted -->&lt;/p></description></item></channel></rss>
