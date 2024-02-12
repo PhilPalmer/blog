@@ -24,7 +24,7 @@ date_format = "Jan 2006"
   location = "Cambridge, UK"
   date_start = "2020-09-01"
   date_end = ""
-  description = """Thesis: Using machine learning to predict influenza antigenicity from hemmaglutinin sequences to accelerate the development of a universal flu vaccine.
+  description = """Thesis: Computational Methods To Design Broad-Spectrum Medical Countermeasures Against Antigenically Diverse Pathogens
   """
 
 [[experience]]

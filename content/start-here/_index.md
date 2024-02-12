@@ -82,7 +82,7 @@ user_groups:
 Hi there. My name is Phil. Welcome to my home on the internet.
 
 ## What I'm Working On
-:man_student: I'm an incoming PhD student in biology at the [University of Cambridge](https://www.research.vet.cam.ac.uk/LVZ/Home)
+:man_student: I'm a PhD student in biology at the [University of Cambridge](https://www.research.vet.cam.ac.uk/LVZ/Home)
 
 :dna: Previosuly I worked as a bioinformatician at a start-up called [Lifebit](https://lifebit.ai/)
 

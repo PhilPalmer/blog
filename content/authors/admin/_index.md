@@ -80,6 +80,6 @@ user_groups:
 - Visitors
 ---
 
-Phil Palmer is an incoming PhD student in biology at the University of Cambridge, in [Professor Jonathan Heeney](https://www.infectiousdisease.cam.ac.uk/directory/jlh66@cam.ac.uk)'s lab. His research interests include bioinformatics, machine learning and viral genomics. He is currently working on using computational methods to predict and validate vaccine candidates, including those used for the development of a universal flu vaccine.
+Phil Palmer is a PhD student in biology at the University of Cambridge, in [Professor Jonathan Heeney](https://www.infectiousdisease.cam.ac.uk/directory/jlh66@cam.ac.uk)'s lab. His research interests include bioinformatics, machine learning and viral genomics. He is currently working on computational methods to design broad-spectrum vaccines and antibodies against pathogens such as coronaviruses and influenza viruses.
 
 Prior to this he worked for two years as an early employee and bioinformatician at the breakout start-up [Lifebit](https://lifebit.ai/). He also holds a first-class degree in Biology from the University of Southampton.
