@@ -42,6 +42,6 @@ hero_media = "phil.jpg"
   label = "Contact me"
 
 +++
-## My name is **Phil Palmer** and I'm a **PhD student** specializing in **Bioinformatics**
+## My name is **Phil Palmer** and I'm a **PhD student** specialising in **Bioinformatics**
 
 I want to use my career to do as much good as possible, by leveraging technologies such as bioinformatics and data science to help prevent/mitigae pandemics.
