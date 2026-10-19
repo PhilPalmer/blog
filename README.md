@@ -21,9 +21,8 @@ Then open http://localhost:8000
 
 Pushing to `master` publishes to GitHub Pages via `.github/workflows/deploy.yml`.
 
-To serve it from a custom domain, add a `CNAME` file containing the domain and
-point the DNS at GitHub *after* the domain resolves - Pages serves the site only
-at the custom domain once that file exists.
+The custom domain is set by the `CNAME` file; DNS points philpalmer.me at
+GitHub (four A records for the apex, plus a `www` CNAME).
 
 ## Figure credits
 
