@@ -35,8 +35,7 @@
     <div class="nav-links">
       <a href="#about" class="hide-sm">About</a>
       <a href="#research">Research</a>
-      <a href="#publications" class="hide-sm">Publications</a>
-      <a href="#hackathons" class="hide-sm">Hackathons</a>
+      <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
@@ -191,14 +190,13 @@
   <div class="container">
     <div class="section-head">
       <h2>Publications</h2>
-      <p>Full listing on <a href="https://scholar.google.com/citations?user=VMrmNJcAAAAJ">Google Scholar</a>.</p>
+      <p>Other work. Full listing on <a href="https://scholar.google.com/citations?user=VMrmNJcAAAAJ">Google Scholar</a>.</p>
     </div>
 
     <div class="filters" id="pub-filters">
       <button class="filter active" data-tag="*">All</button>
       <button class="filter" data-tag="biosecurity">Biosecurity</button>
-      <button class="filter" data-tag="vaccines">Vaccines</button>
-      <button class="filter" data-tag="ai">AI &amp; ML</button>
+      <button class="filter" data-tag="hackathon">Hackathons</button>
       <button class="filter" data-tag="software">Software</button>
       <button class="filter" data-tag="covid">COVID-19</button>
       <button class="filter" data-tag="first-author">First author</button>
@@ -206,179 +204,32 @@
 
     <div class="pubs" id="pub-list">
 
-      <article class="pub" data-tags="biosecurity ai first-author">
+      <article class="pub" data-tags="biosecurity software hackathon first-author">
         <div class="pub-body">
-          <h3><a href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1">Safety First: Input Screening for Protein Design Tools</a></h3>
-          <p class="venue">bioRxiv preprint, 2026</p>
-          <p class="authors"><b>P. Palmer</b>, N. Teran, N. Wheeler, J.M. Yassif</p>
-          <div class="buttons">
-            <a class="btn" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1"><i class="ai ai-biorxiv"></i>Preprint</a>
-            <a class="btn" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1.full.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-            <a class="btn" href="https://github.com/PhilPalmer/bioscreen"><i class="fa-brands fa-github"></i>Code</a>
-          </div>
-        </div>
-        <a class="pub-thumb" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1"><img src="assets/img/research/safety-first.jpg" alt="" loading="lazy"></a>
-      </article>
-
-      <article class="pub" data-tags="vaccines ai first-author">
-        <div class="pub-body">
-          <h3><a href="https://doi.org/10.1016/j.crmeth.2026.101508">A computational method to design broad-spectrum T cell-inducing vaccines applied to Betacoronaviruses</a></h3>
-          <p class="venue">Cell Reports Methods, 2026</p>
-          <p class="authors"><b>P. Palmer</b>, S. Fedosyuk, S. Parthasarathy, J. Holbrook, C. George, L. O'Reilly, L. Wiegand, G.W. Carnell, J.L. Heeney, S. Vishwanath</p>
-          <div class="buttons">
-            <a class="btn" href="https://doi.org/10.1016/j.crmeth.2026.101508"><i class="fa-regular fa-file-lines"></i>Paper</a>
-            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13494552/pdf/main.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-            <a class="btn" href="https://doi.org/10.1101/2025.04.14.648815"><i class="ai ai-biorxiv"></i>Preprint</a>
-            <a class="btn" href="https://github.com/PhilPalmer/Spectravax"><i class="fa-brands fa-github"></i>Code</a>
-          </div>
-        </div>
-        <a class="pub-thumb" href="https://doi.org/10.1016/j.crmeth.2026.101508"><img src="assets/img/research/spectravax.jpg" alt="" loading="lazy"></a>
-      </article>
-
-      <article class="pub" data-tags="biosecurity ai">
-        <div class="pub-body">
-          <h3><a href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf">Global Risk Index for AI-enabled Biological Tools</a></h3>
-          <p class="venue">The Centre for Long-Term Resilience &amp; RAND Europe, 2025</p>
-          <p class="authors">Contributed tool evaluations as a consultant</p>
-          <div class="buttons">
-            <a class="btn" href="https://www.rand.org/randeurope/research/projects/2024/ai-risk-index.html"><i class="fa-solid fa-flask"></i>Project</a>
-            <a class="btn" href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-          </div>
-        </div>
-        <a class="pub-thumb" href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf"><img src="assets/img/research/risk-index.jpg" alt="" loading="lazy"></a>
-      </article>
-
-      <article class="pub" data-tags="vaccines">
-        <div class="pub-body">
-          <h3><a href="https://doi.org/10.1080/22221751.2025.2511132">Computationally designed haemagglutinin with nanocage plug-and-display elicits pan-H5 influenza vaccine responses</a></h3>
-          <p class="venue">Emerging Microbes &amp; Infections, 2025</p>
-          <p class="authors">C.Q. Huang, R.A. Hills, G.W. Carnell, S. Vishwanath, E.T. Aguinam, A.C.Y. Chan, <b>P. Palmer</b>, L. O'Reilly, P. Tonks, N. Temperton, S.D.W. Frost, L.S. Tiley, M.R. Howarth, J.L. Heeney</p>
-          <div class="buttons">
-            <a class="btn" href="https://doi.org/10.1080/22221751.2025.2511132"><i class="fa-regular fa-file-lines"></i>Paper</a>
-            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12258178/pdf/TEMI_14_2511132.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-            <a class="btn" href="https://doi.org/10.1101/2024.11.14.623359"><i class="ai ai-biorxiv"></i>Preprint</a>
-          </div>
-        </div>
-        <a class="pub-thumb" href="https://doi.org/10.1080/22221751.2025.2511132"><img src="assets/img/research/diosvax-h5.jpg" alt="" loading="lazy"></a>
-      </article>
-
-      <article class="pub" data-tags="ai">
-        <div class="pub-body">
-          <h3><a href="https://doi.org/10.1016/j.celrep.2022.111704">MYC regulates a pan-cancer network of co-expressed oncogenic splicing factors</a></h3>
-          <p class="venue">Cell Reports, 2022</p>
-          <p class="authors">L. Urbanski, M. Brugiolo, S. Park, B.L. Angarola, N.K. Leclair, M. Yurieva, <b>P. Palmer</b>, S.K. Sahu, O. Anczuk&oacute;w</p>
-          <div class="buttons">
-            <a class="btn" href="https://doi.org/10.1016/j.celrep.2022.111704"><i class="fa-regular fa-file-lines"></i>Paper</a>
-            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9731204/pdf/nihms-1852534.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-            <a class="btn" href="https://github.com/TheJacksonLaboratory/splicing-pipelines-nf"><i class="fa-brands fa-github"></i>Code</a>
-          </div>
-        </div>
-        <a class="pub-thumb" href="https://doi.org/10.1016/j.celrep.2022.111704"><img src="assets/img/research/myc-splicing.jpg" alt="" loading="lazy"></a>
-      </article>
-
-      <article class="pub" data-tags="software covid first-author">
-        <div class="pub-body">
-          <h3><a href="https://doi.org/10.3389/fimmu.2021.681636">AutoPlate: Rapid dose-response curve analysis for biological assays</a></h3>
-          <p class="venue">Frontiers in Immunology, 2022</p>
-          <p class="authors"><b>P. Palmer</b>, J.M.M. Del Rosario, K.A.S. da Costa, G.W. Carnell, C.Q. Huang, J.L. Heeney, N.J. Temperton, D.A. Wells</p>
-          <div class="buttons">
-            <a class="btn" href="https://doi.org/10.3389/fimmu.2021.681636"><i class="fa-regular fa-file-lines"></i>Paper</a>
-            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.681636/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-            <a class="btn" href="https://github.com/PhilPalmer/AutoPlate"><i class="fa-brands fa-github"></i>Code</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub" data-tags="covid">
-        <div class="pub-body">
-          <h3><a href="https://doi.org/10.3389/fimmu.2022.773982">Neutralisation hierarchy of SARS-CoV-2 variants of concern using standardised, quantitative neutralisation assays reveals a correlation with disease severity</a></h3>
-          <p class="venue">Frontiers in Immunology, 2022</p>
-          <p class="authors">D. Cantoni, M. Mayora-Neto, A. Nadesalingam, D.A. Wells, G.W. Carnell, L. Ohlendorf, M. Ferrari, <b>P. Palmer</b>, et al.</p>
-          <div class="buttons">
-            <a class="btn" href="https://doi.org/10.3389/fimmu.2022.773982"><i class="fa-regular fa-file-lines"></i>Paper</a>
-            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2022.773982/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub" data-tags="covid">
-        <div class="pub-body">
-          <h3><a href="https://doi.org/10.3389/fimmu.2021.748291">Analysis of serological biomarkers of SARS-CoV-2 infection in convalescent samples from severe, moderate and mild COVID-19 cases</a></h3>
-          <p class="venue">Frontiers in Immunology, 2021</p>
-          <p class="authors">J. Castillo-Olivares, D.A. Wells, M. Ferrari, A.C.Y. Chan, P. Smith, A. Nadesalingam, M. Paloniemi, G.W. Carnell, L. Ohlendorf, D. Cantoni, M. Mayora-Neto, <b>P. Palmer</b>, et al.</p>
-          <div class="buttons">
-            <a class="btn" href="https://doi.org/10.3389/fimmu.2021.748291"><i class="fa-regular fa-file-lines"></i>Paper</a>
-            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.748291/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub" data-tags="biosecurity software first-author">
-        <div class="pub-body">
-          <h3><a href="https://apartresearch.com/sprints/projects/biosecure-knowyourcustomer-system-for-dna-synthesis-companies-pkjb">BioSecure: Know-your-customer system for DNA synthesis companies</a></h3>
-          <p class="venue">Apart Research sprint report, 2025</p>
-          <p class="authors"><b>P. Palmer</b>, R. Teo, M. Karlub&iacute;k, J. Harris</p>
-          <div class="buttons">
-            <a class="btn" href="https://apartresearch.com/sprints/projects/biosecure-knowyourcustomer-system-for-dna-synthesis-companies-pkjb"><i class="fa-solid fa-flask"></i>Project</a>
-            <a class="btn" href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/e0046d65-3cee-46b1-9235-c3e9ebf60642-BioSecure.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-            <a class="btn" href="https://biosecure-passport.vercel.app/"><i class="fa-solid fa-display"></i>Demo</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub" data-tags="biosecurity software">
-        <div class="pub-body">
-          <h3><a href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/7ca73223-c248-4bd6-8dee-d7ffb29f3fc4-SplitScreen---AI-x-Bio-hackathon-submission.pdf">Benchmarking obfuscated split-order detection methods</a></h3>
-          <p class="venue">Apart Research sprint report, 2026</p>
-          <p class="authors">A. Jones, <b>P. Palmer</b>, P. Garg</p>
-          <div class="buttons">
-            <a class="btn" href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/7ca73223-c248-4bd6-8dee-d7ffb29f3fc4-SplitScreen---AI-x-Bio-hackathon-submission.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
-            <a class="btn" href="https://github.com/PhilPalmer/split-screen"><i class="fa-brands fa-github"></i>Code</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-    <p class="empty" id="pub-empty" hidden>No publications with that tag.</p>
-  </div>
-</section>
-
-<section id="hackathons" class="alt">
-  <div class="container">
-    <div class="section-head">
-      <h2>Hackathon Wins</h2>
-      <p>Weekend builds for biosecurity</p>
-    </div>
-
-    <div class="items">
-
-      <div class="item">
-        <a class="thumb cover" href="https://biosecure-passport.vercel.app/"><img src="assets/img/research/biosecure.jpg" alt="BioSecure demo application" loading="lazy"></a>
-        <div>
           <span class="badge">&#127942; Winner &middot; def/acc Hackathon, London</span>
-          <h3><a href="https://apartresearch.com/sprints/projects/biosecure-knowyourcustomer-system-for-dna-synthesis-companies-pkjb">BioSecure: Know-your-customer for DNA synthesis companies</a></h3>
-          <p class="venue">November 2025 &middot; BlueDot Impact &amp; Apart Research</p>
+          <h3><a href="https://apartresearch.com/sprints/projects/biosecure-knowyourcustomer-system-for-dna-synthesis-companies-pkjb">BioSecure: Know-your-customer system for DNA synthesis companies</a></h3>
+          <p class="venue">BlueDot Impact &amp; Apart Research, 2025</p>
           <p class="authors"><b>P. Palmer</b>, R. Teo, M. Karlub&iacute;k, J. Harris</p>
           <p class="summary">
             A modular customer-screening framework for DNA synthesis companies, built in 48 hours. It combines ID verification,
-            sanctions and watchlist screening, institutional and publication checks, and protein language model sequence screening
-            into one cumulative risk assessment that supports human decisions rather than replacing them.
+            sanctions screening, institutional and publication checks, and protein language model sequence screening into one
+            cumulative risk assessment that supports human decisions rather than replacing them.
           </p>
           <div class="buttons">
             <a class="btn" href="https://biosecure-passport.vercel.app/"><i class="fa-solid fa-display"></i>Demo</a>
-            <a class="btn" href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/e0046d65-3cee-46b1-9235-c3e9ebf60642-BioSecure.pdf"><i class="fa-regular fa-file-pdf"></i>Report</a>
+            <a class="btn" href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/e0046d65-3cee-46b1-9235-c3e9ebf60642-BioSecure.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
             <a class="btn" href="https://apartresearch.com/sprints/projects/biosecure-knowyourcustomer-system-for-dna-synthesis-companies-pkjb"><i class="fa-solid fa-flask"></i>Project</a>
             <a class="btn" href="https://builddefenses.ai/"><i class="fa-solid fa-trophy"></i>Hackathon</a>
           </div>
         </div>
-      </div>
+        <a class="pub-thumb cover" href="https://biosecure-passport.vercel.app/"><img src="assets/img/research/biosecure.jpg" alt="BioSecure demo application" loading="lazy"></a>
+      </article>
 
-      <div class="item">
-        <a class="thumb cover" href="https://bio.builddefenses.ai"><img src="assets/img/research/splitscreen.jpg" alt="Presenting SplitScreen at the AI x Bio hackathon" loading="lazy"></a>
-        <div>
+      <article class="pub" data-tags="biosecurity software hackathon">
+        <div class="pub-body">
           <span class="badge">&#127942; Winner &middot; AI &times; Bio Hackathon, London</span>
-          <h3><a href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/7ca73223-c248-4bd6-8dee-d7ffb29f3fc4-SplitScreen---AI-x-Bio-hackathon-submission.pdf">SplitScreen: Benchmarking obfuscated split-order detection</a></h3>
-          <p class="venue">April 2026 &middot; BlueDot Impact, Apart Research &amp; Cambridge Biosecurity Hub</p>
+          <h3><a href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/7ca73223-c248-4bd6-8dee-d7ffb29f3fc4-SplitScreen---AI-x-Bio-hackathon-submission.pdf">SplitScreen: Benchmarking obfuscated split-order detection methods</a></h3>
+          <p class="venue">BlueDot Impact, Apart Research &amp; Cambridge Biosecurity Hub, 2026</p>
           <p class="authors">A. Jones, <b>P. Palmer</b>, P. Garg</p>
           <p class="summary">
             DNA synthesis screening works on single oligos, so an adversary can split a hazardous gene across many short fragments
@@ -387,14 +238,68 @@
             substitution where exact-match methods broke down.
           </p>
           <div class="buttons">
-            <a class="btn" href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/7ca73223-c248-4bd6-8dee-d7ffb29f3fc4-SplitScreen---AI-x-Bio-hackathon-submission.pdf"><i class="fa-regular fa-file-pdf"></i>Report</a>
+            <a class="btn" href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/7ca73223-c248-4bd6-8dee-d7ffb29f3fc4-SplitScreen---AI-x-Bio-hackathon-submission.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
             <a class="btn" href="https://github.com/PhilPalmer/split-screen"><i class="fa-brands fa-github"></i>Code</a>
             <a class="btn" href="https://bio.builddefenses.ai"><i class="fa-solid fa-trophy"></i>Hackathon</a>
           </div>
         </div>
-      </div>
+        <a class="pub-thumb cover" href="https://bio.builddefenses.ai"><img src="assets/img/research/splitscreen.jpg" alt="Presenting SplitScreen at the AI x Bio hackathon" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="software covid first-author">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.3389/fimmu.2021.681636">AutoPlate: Rapid dose-response curve analysis for biological assays</a></h3>
+          <p class="venue">Frontiers in Immunology, 2022</p>
+          <p class="authors"><b>P. Palmer</b>, J.M.M. Del Rosario, K.A.S. da Costa, G.W. Carnell, C.Q. Huang, J.L. Heeney, N.J. Temperton, D.A. Wells</p>
+          <p class="summary">
+            An open-source R Shiny app that automates dose-response curve fitting for immunoassays such as the pseudotype
+            microneutralisation assay, cutting analysis time during COVID-19 and influenza work.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.3389/fimmu.2021.681636"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.681636/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://github.com/PhilPalmer/AutoPlate"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.3389/fimmu.2021.681636"><img src="assets/img/research/autoplate.jpg" alt="AutoPlate assay workflow" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="covid">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.3389/fimmu.2022.773982">Neutralisation hierarchy of SARS-CoV-2 variants of concern using standardised, quantitative neutralisation assays reveals a correlation with disease severity</a></h3>
+          <p class="venue">Frontiers in Immunology, 2022</p>
+          <p class="authors">D. Cantoni, M. Mayora-Neto, A. Nadesalingam, D.A. Wells, G.W. Carnell, L. Ohlendorf, M. Ferrari, <b>P. Palmer</b>, et al.</p>
+          <p class="summary">
+            Benchmarks how well first-wave convalescent sera neutralise each SARS-CoV-2 variant of concern, reported in
+            international units, and finds that more severe COVID-19 corresponded to broader neutralisation.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.3389/fimmu.2022.773982"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2022.773982/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+          </div>
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.3389/fimmu.2022.773982"><img src="assets/img/research/neutralisation.jpg" alt="Standardising neutralisation assays across laboratories" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="covid">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.3389/fimmu.2021.748291">Analysis of serological biomarkers of SARS-CoV-2 infection in convalescent samples from severe, moderate and mild COVID-19 cases</a></h3>
+          <p class="venue">Frontiers in Immunology, 2021</p>
+          <p class="authors">J. Castillo-Olivares, D.A. Wells, M. Ferrari, A.C.Y. Chan, P. Smith, A. Nadesalingam, M. Paloniemi, G.W. Carnell, L. Ohlendorf, D. Cantoni, M. Mayora-Neto, <b>P. Palmer</b>, et al.</p>
+          <p class="summary">
+            Compares neutralising and binding antibody assays against the WHO international standard to find biomarkers that
+            distinguish severe from mild infection, as candidate correlates of protection.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.3389/fimmu.2021.748291"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.748291/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+          </div>
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.3389/fimmu.2021.748291"><img src="assets/img/research/serology.jpg" alt="Serological assay dose-response curves" loading="lazy"></a>
+      </article>
 
     </div>
+    <p class="empty" id="pub-empty" hidden>No publications with that tag.</p>
   </div>
 </section>
 

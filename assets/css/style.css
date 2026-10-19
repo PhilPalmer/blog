@@ -211,31 +211,34 @@ section.alt { background: var(--bg-alt); }
   background: var(--accent-soft);
 }
 
-.pubs { display: flex; flex-direction: column; }
+.pubs { display: flex; flex-direction: column; gap: 28px; }
 .pub {
   display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 28px;
+  grid-template-columns: 340px 1fr;
+  gap: 32px;
   align-items: center;
-  padding: 20px 0;
+  padding-bottom: 28px;
   border-bottom: 1px solid var(--border);
 }
-.pub:last-child { border-bottom: none; }
-.pub-body h3 { font-size: 1rem; margin: 0 0 4px; line-height: 1.45; }
+.pub:last-child { border-bottom: none; padding-bottom: 0; }
+.pub-body { order: 2; }
+.pub-body h3 { font-size: 1.2rem; margin: 0 0 6px; line-height: 1.4; }
 .pub-body h3 a { color: var(--heading); }
 .pub-body h3 a:hover { color: var(--accent); text-decoration: none; }
-.pub-body .venue { margin: 0 0 2px; font-size: 0.88rem; }
-.pub-body .authors { margin: 0 0 10px; font-size: 0.85rem; }
+.pub-body .summary { margin: 0 0 12px; font-size: 0.97rem; }
 .pub-thumb {
+  order: 1;
   display: block;
-  aspect-ratio: 16 / 9;
-  border-radius: 6px;
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
   overflow: hidden;
   background: var(--figure-bg);
   border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
-.pub-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
-.pub:not(:has(.pub-thumb)) { grid-template-columns: 1fr; }
+.pub-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform 0.25s; }
+.pub-thumb.cover img { object-fit: cover; }
+.pub-thumb:hover img { transform: scale(1.03); }
 .empty { text-align: center; color: var(--muted); padding: 24px 0; }
 
 /* Experience timeline */
@@ -323,8 +326,7 @@ footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 2
 @media (max-width: 860px) {
   .about { grid-template-columns: 1fr; gap: 32px; }
   .item { grid-template-columns: 1fr; gap: 16px; }
-  .pub { grid-template-columns: 1fr; gap: 14px; }
-  .pub-thumb { order: -1; }
+  .pub { grid-template-columns: 1fr; gap: 16px; }
   .nav-links a.hide-sm { display: none; }
   section { padding: 52px 0; }
 }
