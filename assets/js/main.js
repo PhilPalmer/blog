@@ -49,35 +49,25 @@
   var filters = document.getElementById("pub-filters");
   var pubs = Array.prototype.slice.call(document.querySelectorAll("#pub-list .pub"));
   var empty = document.getElementById("pub-empty");
-  var moreBtn = document.getElementById("pub-more");
 
   var tag = "*";
-  var expanded = false;
 
   function render() {
     var shown = 0;
-    var hiddenByCollapse = 0;
 
     pubs.forEach(function (pub) {
       var tags = (pub.dataset.tags || "").split(/\s+/);
       var match = tag === "*" || tags.indexOf(tag) !== -1;
-      // The featured entries have their own section, so they stay out of
-      // the unfiltered list until it is expanded.
-      var collapsed = tag === "*" && !expanded && pub.classList.contains("featured");
+      // Featured entries have their own section, so the unfiltered list
+      // shows only the rest; a tag filter still searches everything.
+      var collapsed = tag === "*" && pub.classList.contains("featured");
       pub.hidden = !match || collapsed;
       if (match) {
         shown++;
-        if (collapsed) hiddenByCollapse++;
       }
     });
 
     if (empty) empty.hidden = shown > 0;
-    if (moreBtn) {
-      // The button is only meaningful on the unfiltered list.
-      moreBtn.parentElement.hidden = tag !== "*";
-      moreBtn.textContent = expanded ? "Show fewer" : "See all (" + pubs.length + ")";
-      moreBtn.setAttribute("aria-expanded", String(expanded));
-    }
   }
 
   if (filters) {
@@ -89,16 +79,6 @@
       });
       tag = btn.dataset.tag;
       render();
-    });
-  }
-
-  if (moreBtn) {
-    moreBtn.addEventListener("click", function () {
-      expanded = !expanded;
-      render();
-      if (!expanded) {
-        document.getElementById("publications").scrollIntoView();
-      }
     });
   }
 
