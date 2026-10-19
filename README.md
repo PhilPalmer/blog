@@ -19,8 +19,11 @@ Then open http://localhost:8000
 
 ## Deploy
 
-Pushing to `master` publishes to GitHub Pages via `.github/workflows/deploy.yml`,
-served at the domain in `CNAME`.
+Pushing to `master` publishes to GitHub Pages via `.github/workflows/deploy.yml`.
+
+To serve it from a custom domain, add a `CNAME` file containing the domain and
+point the DNS at GitHub *after* the domain resolves - Pages serves the site only
+at the custom domain once that file exists.
 
 ## Figure credits
 
