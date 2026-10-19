@@ -259,25 +259,26 @@ section.alt { background: var(--bg-alt); }
 .timeline::before {
   content: "";
   position: absolute;
-  left: 7px;
-  top: 8px;
-  bottom: 8px;
+  left: 21px;
+  top: 10px;
+  bottom: 10px;
   width: 2px;
   background: var(--border);
 }
-.job { position: relative; padding-left: 40px; margin-bottom: 30px; }
-.job::before {
-  content: "";
+.job { position: relative; padding-left: 64px; margin-bottom: 32px; }
+.job-logo {
   position: absolute;
   left: 0;
-  top: 7px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 3px solid var(--accent);
+  top: 2px;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  padding: 5px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
-section.alt .job::before { background: var(--bg-alt); }
 .job h3 { font-size: 1.08rem; margin: 0; }
 .job .meta { color: var(--muted); font-size: 0.9rem; margin: 2px 0 6px; }
 .job ul { margin: 0; padding-left: 18px; font-size: 0.95rem; }
