@@ -45,6 +45,32 @@
     });
   }
 
+  // Publication tag filter
+  var filters = document.getElementById("pub-filters");
+  var pubs = document.querySelectorAll("#pub-list .pub");
+  var empty = document.getElementById("pub-empty");
+
+  if (filters) {
+    filters.addEventListener("click", function (e) {
+      var btn = e.target.closest(".filter");
+      if (!btn) return;
+
+      filters.querySelectorAll(".filter").forEach(function (b) {
+        b.classList.toggle("active", b === btn);
+      });
+
+      var tag = btn.dataset.tag;
+      var shown = 0;
+      pubs.forEach(function (pub) {
+        var tags = (pub.dataset.tags || "").split(/\s+/);
+        var match = tag === "*" || tags.indexOf(tag) !== -1;
+        pub.hidden = !match;
+        if (match) shown++;
+      });
+      if (empty) empty.hidden = shown > 0;
+    });
+  }
+
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 })();

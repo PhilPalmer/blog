@@ -185,12 +185,58 @@ section.alt { background: var(--bg-alt); }
 }
 .btn:hover { background: var(--accent); color: var(--bg); text-decoration: none; }
 
-/* Compact publication list */
-.more { margin-top: 48px; }
-.more h3 { font-size: 1.3rem; margin: 0 0 12px; }
-.more ul { padding-left: 20px; margin: 0 0 14px; }
-.more li { margin-bottom: 10px; font-size: 0.95rem; }
-.more li .venue { display: inline; }
+/* Filterable publication list */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+.filter {
+  font-family: inherit;
+  font-size: 0.82rem;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 14px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.filter:hover { color: var(--accent); border-color: var(--accent); }
+.filter.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.pubs { display: flex; flex-direction: column; }
+.pub {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 28px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+.pub:last-child { border-bottom: none; }
+.pub-body h3 { font-size: 1rem; margin: 0 0 4px; line-height: 1.45; }
+.pub-body h3 a { color: var(--heading); }
+.pub-body h3 a:hover { color: var(--accent); text-decoration: none; }
+.pub-body .venue { margin: 0 0 2px; font-size: 0.88rem; }
+.pub-body .authors { margin: 0 0 10px; font-size: 0.85rem; }
+.pub-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--figure-bg);
+  border: 1px solid var(--border);
+}
+.pub-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.pub:not(:has(.pub-thumb)) { grid-template-columns: 1fr; }
+.empty { text-align: center; color: var(--muted); padding: 24px 0; }
 
 /* Experience timeline */
 .timeline { max-width: 820px; margin: 0 auto; position: relative; }
@@ -277,7 +323,8 @@ footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 2
 @media (max-width: 860px) {
   .about { grid-template-columns: 1fr; gap: 32px; }
   .item { grid-template-columns: 1fr; gap: 16px; }
-  .facts { grid-template-columns: 1fr; }
+  .pub { grid-template-columns: 1fr; gap: 14px; }
+  .pub-thumb { order: -1; }
   .nav-links a.hide-sm { display: none; }
   section { padding: 52px 0; }
 }
