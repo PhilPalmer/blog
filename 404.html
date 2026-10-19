@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page moved</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css?v=18">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+  <style>
+    .gone { min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+    .gone h1 { font-size: 1.6rem; margin: 0 0 12px; }
+    .gone p { color: var(--muted); margin: 0 0 24px; }
+  </style>
+</head>
+<body>
+
+<section class="gone">
+  <div class="container">
+    <h1>This page has moved</h1>
+    <p>The site was rebuilt, so this address no longer exists.<br>Taking you to the homepage&hellip;</p>
+    <a class="contact-link" id="home" href="/">Go to the homepage</a>
+  </div>
+</section>
+
+<script>
+  // The site lives at the domain root, but also at /blog/ on github.io.
+  var home = location.pathname.indexOf("/blog/") === 0 ? "/blog/" : "/";
+  document.getElementById("home").setAttribute("href", home);
+  setTimeout(function () {
+    location.replace(home);
+  }, 2500);
+</script>
+
+</body>
+</html>
