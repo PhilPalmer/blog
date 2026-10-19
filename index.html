@@ -13,14 +13,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>
     try {
       var t = localStorage.getItem("theme");
-      if (t) document.documentElement.setAttribute("data-theme", t);
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   </script>
 </head>
@@ -45,10 +45,10 @@
     <div class="profile">
       <img class="avatar" src="assets/img/avatar.jpg" alt="Phil Palmer">
       <h1>Phil Palmer</h1>
-      <p class="role">Co-founder</p>
+      <p class="role">Co-founder &amp; CTO</p>
       <p class="org"><a href="https://safely.bio">safely.bio</a></p>
       <div class="socials">
-        <a href="mailto:phil.palmer.email@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#contact" aria-label="Contact"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://scholar.google.com/citations?user=VMrmNJcAAAAJ" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
         <a href="https://linkedin.com/in/phil-palmer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/PhilPalmer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -59,48 +59,20 @@
     <div class="bio">
       <h2>Hi there!</h2>
       <p>
-        I'm a bioinformatician working towards <b>a world safe from pandemics</b>.
-        I'm currently co-founder of <a href="https://safely.bio">safely.bio</a>, where we're building a biosecurity startup.
-        My work sits at the intersection of <b>computational biology, AI and biosecurity</b>.
+        I co-founded <a href="https://safely.bio">safely.bio</a>, where I'm CTO. We build know-your-customer software
+        for the biotech industry to improve biosecurity.
       </p>
       <p>
-        I did my PhD at the <a href="https://www.cam.ac.uk/">University of Cambridge</a> in
-        Prof. Jonathan Heeney's Lab of Viral Zoonotics, developing <b>computational methods to design broad-spectrum vaccines</b>,
-        including <a href="#research">Spectravax</a>. During my PhD I was a visiting researcher at the
-        <a href="https://www.media.mit.edu/">MIT Media Lab</a> with Prof. Kevin Esvelt, improving metagenomic pipelines for the
-        <a href="https://www.naobservatory.org/">Nucleic Acid Observatory</a>'s early-warning system for biothreats.
-        I also helped grow the Cambridge Biosecurity Hub from zero to 30+ members.
+        Previously I did a <a href="https://www.vet.cam.ac.uk/">PhD at Cambridge</a> in computational vaccine design, built
+        metagenomics pipelines for biothreat detection at <a href="https://www.media.mit.edu/">MIT</a>, was employee ~10 at
+        <a href="https://lifebit.ai/">Lifebit Biotech</a> through a $7.5M Series A, and advised the
+        <a href="https://www.nti.org/">Nuclear Threat Initiative</a> and the
+        <a href="https://www.longtermresilience.org/">Centre for Long-Term Resilience</a> on AI-enabled biological risks.
+        I also scaled the <a href="https://www.cambiohub.org/">Cambridge Biosecurity Hub</a> from zero to 30+ members.
       </p>
-      <p>
-        More recently, I've worked on <b>safeguards for AI-enabled biology</b>: designing input screening for protein design tools
-        with the <a href="https://www.nti.org/">Nuclear Threat Initiative</a>, and evaluating the dual-use risks of biological AI tools
-        for the <a href="https://www.longtermresilience.org/">Centre for Long-Term Resilience</a> and RAND Europe.
-        I was also a founder in residence at <a href="https://www.ambitiousimpact.com/">Ambitious Impact</a> and a 5050 fellow at
-        <a href="https://www.fiftyyears.com/">Fifty Years</a>.
+      <p class="tagline">
+        Thinking about <b>biosecurity</b>, <b>AI &times; bio</b>, and <b>startups</b>.
       </p>
-      <p>
-        Before my PhD, I was employee ~10 at the genomics startup <a href="https://lifebit.ai/">Lifebit</a>, building bioinformatics
-        pipelines through its $7.5M Series A.
-      </p>
-
-      <div class="facts">
-        <div>
-          <h3>Interests</h3>
-          <ul>
-            <li><i class="fa-solid fa-shield-virus"></i><span>Biosecurity &amp; pandemic preparedness</span></li>
-            <li><i class="fa-solid fa-robot"></i><span>AI &times; bio safeguards</span></li>
-            <li><i class="fa-solid fa-syringe"></i><span>Computational vaccine design</span></li>
-            <li><i class="fa-solid fa-rocket"></i><span>Startups</span></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Education</h3>
-          <ul>
-            <li><i class="fa-solid fa-graduation-cap"></i><span>PhD in Biology, 2025<span class="sub">University of Cambridge</span></span></li>
-            <li><i class="fa-solid fa-graduation-cap"></i><span>BSc in Biology (First Class), 2018<span class="sub">University of Southampton</span></span></li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -288,10 +260,18 @@
     <div class="timeline">
 
       <div class="job">
-        <h3>Co-Founder &middot; <a href="https://safely.bio">safely.bio</a></h3>
+        <h3>Co-Founder &amp; CTO &middot; <a href="https://safely.bio">safely.bio</a></h3>
         <p class="meta">Apr 2026 &ndash; Present &middot; Cambridge, UK</p>
         <ul>
-          <li>Building a biosecurity startup.</li>
+          <li>Building know-your-customer software for the biotech industry to improve biosecurity.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Research Lead &middot; <a href="https://www.cambiohub.org/">Cambridge Biosecurity Hub</a></h3>
+        <p class="meta">2021 &ndash; Present &middot; Cambridge, UK</p>
+        <ul>
+          <li>Scaled the hub from 0 to 30+ members, helped run the weekly reading group, and mentored two graduate students on a biosecurity project quantifying pandemic risks.</li>
         </ul>
       </div>
 
@@ -350,9 +330,8 @@
         <h3>Bioinformatician &middot; <a href="https://lifebit.ai/">Lifebit</a></h3>
         <p class="meta">Jul 2018 &ndash; Jul 2020 &middot; London, UK</p>
         <ul>
-          <li>Joined as employee ~10 shortly after the seed round; contributed to growth to ~30 employees and a $7.5M Series A.</li>
-          <li>Delivered key projects including the Genomics England COVID-19 research platform.</li>
-          <li>Enhanced an imputation pipeline used by leading genetics firms to analyse thousands of customer datasets.</li>
+          <li>Joined as employee ~10 shortly after the seed round; contributed to growth to ~30 employees and a $7.5M Series A, including delivery of the <a href="https://www.genomicsengland.co.uk/news/research-environment-covid-19-lifebit-aws">Genomics England Research Platform</a> for COVID-19 response.</li>
+          <li>Built bioinformatics pipelines adopted by leading genetics firms including Nebula Genomics and Sano Genetics, analysing data from thousands of customers.</li>
         </ul>
       </div>
 
@@ -368,14 +347,33 @@
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="alt">
   <div class="container contact">
     <div class="section-head">
       <h2>Contact</h2>
       <p>Always happy to chat about biosecurity, AI &times; bio, or startups.</p>
     </div>
-    <p><a href="mailto:phil.palmer.email@gmail.com"><i class="fa-solid fa-envelope"></i> phil.palmer.email@gmail.com</a></p>
-    <p><a href="https://linkedin.com/in/phil-palmer"><i class="fa-brands fa-linkedin"></i> DM me on LinkedIn</a></p>
+
+    <!-- Formspree endpoint: replace FORM_ID with the id from your Formspree form -->
+    <form class="contact-form" action="https://formspree.io/f/FORM_ID" method="POST">
+      <div class="field-row">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+      </div>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="submit">Send message</button>
+    </form>
+
+    <p class="or">or <a href="https://linkedin.com/in/phil-palmer">DM me on LinkedIn</a></p>
   </div>
 </section>
 
