@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phil Palmer</title>
+  <meta name="description" content="Phil Palmer - bioinformatician and biosecurity founder working towards a world safe from pandemics.">
+  <meta property="og:title" content="Phil Palmer">
+  <meta property="og:description" content="Bioinformatician and biosecurity founder working towards a world safe from pandemics.">
+  <meta property="og:image" content="https://philpalmer.me/assets/img/avatar.jpg">
+  <meta property="og:url" content="https://philpalmer.me/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=18">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a class="brand" href="#">Phil Palmer</a>
+    <div class="nav-links">
+      <a href="#about" class="hide-sm">About</a>
+      <a href="#featured">Featured</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    </div>
+  </div>
+</nav>
+
+<section id="about">
+  <div class="container about">
+    <div class="profile">
+      <img class="avatar" src="assets/img/avatar.jpg" alt="Phil Palmer">
+      <h1>Phil Palmer</h1>
+      <p class="role">Co-founder</p>
+      <p class="org"><a href="https://safely.bio">safely.bio</a></p>
+      <div class="socials">
+        <a href="https://scholar.google.com/citations?user=VMrmNJcAAAAJ" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://linkedin.com/in/phil-palmer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/PhilPalmer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/phil_palmer_" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="bio">
+      <h2>Hi there!</h2>
+      <p>
+        I'm co-founder of <a href="https://safely.bio">safely.bio</a>, where we're building a verification system for the
+        biotech industry.
+      </p>
+      <p>
+        Previously, I designed a broad-spectrum coronavirus vaccine during my <a href="https://www.vet.cam.ac.uk/">PhD at
+        Cambridge</a>, built metagenomics pipelines for threat detection at <a href="https://www.media.mit.edu/">MIT</a>, and was
+        employee ~10 at <a href="https://lifebit.ai/">Lifebit Biotech</a> through a $7.5 million Series A. I've also worked with
+        biosecurity think tanks such as the <a href="https://www.nti.org/">Nuclear Threat Initiative</a> and the
+        <a href="https://www.longtermresilience.org/">Centre for Long-Term Resilience</a> on AI-enabled biological risks, and
+        helped scale the <a href="https://www.cambiohub.org/">Cambridge Biosecurity Hub</a> from 0 to 30+ members.
+      </p>
+      <p class="tagline">
+        Thinking about <b>biosecurity</b>, <b>AI &times; bio</b>, and <b>startups</b>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="featured" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Featured</h2>
+      <p>Research highlights</p>
+    </div>
+
+    <div class="items">
+
+      <div class="item">
+        <a class="thumb" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1"><img src="assets/img/research/safety-first.jpg" alt="Input screening workflow for protein design tools" loading="lazy"></a>
+        <div>
+          <h3><a href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1">Safety First: Input Screening for Protein Design Tools</a></h3>
+          <p class="venue">bioRxiv preprint, 2026 &middot; Nuclear Threat Initiative</p>
+          <p class="authors"><b>P. Palmer</b>, N. Teran, N. Wheeler, J.M. Yassif</p>
+          <p class="summary">
+            AI protein design tools can produce novel sequences that similarity-based screening misses. <b>BioScreen</b> screens the
+            <i>target</i> instead: a database of 14,541 potentially harmful human proteoforms, classified by risk level, combined with
+            embedding-based screening using the ESM-C protein language model. It reaches F1 &gt; 97% on variants of known targets and
+            tells benign mutations apart from damaging ones where BLASTP does not.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1"><i class="ai ai-biorxiv"></i>Preprint</a>
+            <a class="btn" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1.full.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://github.com/PhilPalmer/bioscreen"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <a class="thumb" href="https://doi.org/10.1016/j.crmeth.2026.101508"><img src="assets/img/research/spectravax.jpg" alt="Spectravax graphical abstract" loading="lazy"></a>
+        <div>
+          <h3><a href="https://doi.org/10.1016/j.crmeth.2026.101508">A computational method to design broad-spectrum T cell-inducing vaccines applied to Betacoronaviruses</a></h3>
+          <p class="venue">Cell Reports Methods, 2026</p>
+          <p class="authors"><b>P. Palmer</b>, S. Fedosyuk, S. Parthasarathy, J. Holbrook, C. George, L. O'Reilly, L. Wiegand, G.W. Carnell, J.L. Heeney, S. Vishwanath</p>
+          <p class="summary">
+            <b>Spectravax</b> designs vaccines that account for genetic diversity in both the human host and the pathogen.
+            A single designed nucleocapsid antigen raised immune responses in mice to SARS-CoV, SARS-CoV-2 <i>and</i> MERS-CoV &mdash;
+            the three coronaviruses behind every major outbreak since 2002.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.1016/j.crmeth.2026.101508"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13494552/pdf/main.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://doi.org/10.1101/2025.04.14.648815"><i class="ai ai-biorxiv"></i>Preprint</a>
+            <a class="btn" href="https://github.com/PhilPalmer/Spectravax"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <a class="thumb cover" href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf"><img src="assets/img/research/risk-index.jpg" alt="Global Risk Index for AI-enabled Biological Tools report cover" loading="lazy"></a>
+        <div>
+          <h3><a href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf">Global Risk Index for AI-enabled Biological Tools</a></h3>
+          <p class="venue">The Centre for Long-Term Resilience &amp; RAND Europe, 2025</p>
+          <p class="summary">
+            A global assessment of the dual-use risks posed by narrow AI-enabled biological tools, built to inform policy on reducing
+            the risk of AI-enabled biothreats. I contributed tool evaluations as a consultant.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf"><i class="fa-regular fa-file-pdf"></i>Report</a>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <a class="thumb" href="https://doi.org/10.1080/22221751.2025.2511132"><img src="assets/img/research/diosvax-h5.jpg" alt="Haemagglutinin antigen displayed on a nanocage" loading="lazy"></a>
+        <div>
+          <h3><a href="https://doi.org/10.1080/22221751.2025.2511132">Computationally designed haemagglutinin with nanocage plug-and-display elicits pan-H5 influenza vaccine responses</a></h3>
+          <p class="venue">Emerging Microbes &amp; Infections, 2025</p>
+          <p class="authors">C.Q. Huang, R.A. Hills, G.W. Carnell, S. Vishwanath, E.T. Aguinam, A.C.Y. Chan, <b>P. Palmer</b>, L. O'Reilly, P. Tonks, N. Temperton, S.D.W. Frost, L.S. Tiley, M.R. Howarth, J.L. Heeney</p>
+          <p class="summary">
+            A computationally designed H5 antigen displayed multivalently on the mi3 nanocage. At low doses it elicits cross-clade
+            neutralising antibody and T cell responses against diverse H5 bird flu strains &mdash; a scalable candidate for
+            pre-pandemic stockpiling.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.1080/22221751.2025.2511132"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12258178/pdf/TEMI_14_2511132.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://doi.org/10.1101/2024.11.14.623359"><i class="ai ai-biorxiv"></i>Preprint</a>
+          </div>
+        
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="container">
+    <div class="section-head">
+      <h2>Publications</h2>
+      <p>Everything else. Full listing on <a href="https://scholar.google.com/citations?user=VMrmNJcAAAAJ">Google Scholar</a></p>
+    </div>
+
+    <div class="filters" id="pub-filters">
+      <button class="filter active" data-tag="*">All</button>
+      <button class="filter" data-tag="biosafeguards">AIxBio safeguards</button>
+      <button class="filter" data-tag="ai">AI</button>
+      <button class="filter" data-tag="vaccines">Vaccines</button>
+      <button class="filter" data-tag="bioinformatics">Bioinformatics</button>
+      <button class="filter" data-tag="covid">COVID-19</button>
+      <button class="filter" data-tag="hackathon">Hackathons</button>
+      <button class="filter" data-tag="first-author">First author</button>
+    </div>
+
+    <div class="pubs" id="pub-list">
+
+      <article class="pub featured" data-tags="ai biosafeguards first-author">
+        <div class="pub-body">
+          <h3><a href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1">Safety First: Input Screening for Protein Design Tools</a></h3>
+          <p class="venue">bioRxiv preprint, 2026 &middot; Nuclear Threat Initiative</p>
+          <p class="authors"><b>P. Palmer</b>, N. Teran, N. Wheeler, J.M. Yassif</p>
+          <p class="summary">
+            AI protein design tools can produce novel sequences that similarity-based screening misses. <b>BioScreen</b> screens the
+            <i>target</i> instead: a database of 14,541 potentially harmful human proteoforms, classified by risk level, combined with
+            embedding-based screening using the ESM-C protein language model. It reaches F1 &gt; 97% on variants of known targets and
+            tells benign mutations apart from damaging ones where BLASTP does not.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1"><i class="ai ai-biorxiv"></i>Preprint</a>
+            <a class="btn" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1.full.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://github.com/PhilPalmer/bioscreen"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        
+        </div>
+        <a class="pub-thumb" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1"><img src="assets/img/research/safety-first.jpg" alt="Input screening workflow for protein design tools" loading="lazy"></a>
+      </article>
+
+      <article class="pub featured" data-tags="ai vaccines bioinformatics covid first-author">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.1016/j.crmeth.2026.101508">A computational method to design broad-spectrum T cell-inducing vaccines applied to Betacoronaviruses</a></h3>
+          <p class="venue">Cell Reports Methods, 2026</p>
+          <p class="authors"><b>P. Palmer</b>, S. Fedosyuk, S. Parthasarathy, J. Holbrook, C. George, L. O'Reilly, L. Wiegand, G.W. Carnell, J.L. Heeney, S. Vishwanath</p>
+          <p class="summary">
+            <b>Spectravax</b> designs vaccines that account for genetic diversity in both the human host and the pathogen.
+            A single designed nucleocapsid antigen raised immune responses in mice to SARS-CoV, SARS-CoV-2 <i>and</i> MERS-CoV &mdash;
+            the three coronaviruses behind every major outbreak since 2002.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.1016/j.crmeth.2026.101508"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13494552/pdf/main.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://doi.org/10.1101/2025.04.14.648815"><i class="ai ai-biorxiv"></i>Preprint</a>
+            <a class="btn" href="https://github.com/PhilPalmer/Spectravax"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.1016/j.crmeth.2026.101508"><img src="assets/img/research/spectravax.jpg" alt="Spectravax graphical abstract" loading="lazy"></a>
+      </article>
+
+      <article class="pub featured" data-tags="ai biosafeguards">
+        <div class="pub-body">
+          <h3><a href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf">Global Risk Index for AI-enabled Biological Tools</a></h3>
+          <p class="venue">The Centre for Long-Term Resilience &amp; RAND Europe, 2025</p>
+          <p class="summary">
+            A global assessment of the dual-use risks posed by narrow AI-enabled biological tools, built to inform policy on reducing
+            the risk of AI-enabled biothreats. I contributed tool evaluations as a consultant.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf"><i class="fa-regular fa-file-pdf"></i>Report</a>
+          </div>
+        
+        </div>
+        <a class="pub-thumb cover" href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf"><img src="assets/img/research/risk-index.jpg" alt="Global Risk Index for AI-enabled Biological Tools report cover" loading="lazy"></a>
+      </article>
+
+      <article class="pub featured" data-tags="vaccines bioinformatics">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.1080/22221751.2025.2511132">Computationally designed haemagglutinin with nanocage plug-and-display elicits pan-H5 influenza vaccine responses</a></h3>
+          <p class="venue">Emerging Microbes &amp; Infections, 2025</p>
+          <p class="authors">C.Q. Huang, R.A. Hills, G.W. Carnell, S. Vishwanath, E.T. Aguinam, A.C.Y. Chan, <b>P. Palmer</b>, L. O'Reilly, P. Tonks, N. Temperton, S.D.W. Frost, L.S. Tiley, M.R. Howarth, J.L. Heeney</p>
+          <p class="summary">
+            A computationally designed H5 antigen displayed multivalently on the mi3 nanocage. At low doses it elicits cross-clade
+            neutralising antibody and T cell responses against diverse H5 bird flu strains &mdash; a scalable candidate for
+            pre-pandemic stockpiling.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.1080/22221751.2025.2511132"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12258178/pdf/TEMI_14_2511132.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://doi.org/10.1101/2024.11.14.623359"><i class="ai ai-biorxiv"></i>Preprint</a>
+          </div>
+        
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.1080/22221751.2025.2511132"><img src="assets/img/research/diosvax-h5.jpg" alt="Haemagglutinin antigen displayed on a nanocage" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="bioinformatics">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.1016/j.celrep.2022.111704">MYC regulates a pan-cancer network of co-expressed oncogenic splicing factors</a></h3>
+          <p class="venue">Cell Reports, 2022</p>
+          <p class="authors">L. Urbanski, M. Brugiolo, S. Park, B.L. Angarola, N.K. Leclair, M. Yurieva, <b>P. Palmer</b>, S.K. Sahu, O. Anczuk&oacute;w</p>
+          <p class="summary">
+            A network of splicing factors co-regulated with MYC across 33 tumour types, yielding a splicing signature that correlates
+            with survival. While at Lifebit I built the Nextflow pipeline behind the large-scale splicing analysis.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.1016/j.celrep.2022.111704"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9731204/pdf/nihms-1852534.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://github.com/TheJacksonLaboratory/splicing-pipelines-nf"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.1016/j.celrep.2022.111704"><img src="assets/img/research/myc-splicing.jpg" alt="MYC splicing factor network graphical abstract" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="ai biosafeguards hackathon first-author">
+        <div class="pub-body">
+          <span class="badge">&#127942; Winner &middot; def/acc Hackathon, London</span>
+          <h3><a href="https://apartresearch.com/sprints/projects/biosecure-knowyourcustomer-system-for-dna-synthesis-companies-pkjb">BioSecure: Know-your-customer system for DNA synthesis companies</a></h3>
+          <p class="venue">BlueDot Impact &amp; Apart Research, 2025</p>
+          <p class="authors"><b>P. Palmer</b>, R. Teo, M. Karlub&iacute;k, J. Harris</p>
+          <p class="summary">
+            A modular customer-screening framework for DNA synthesis companies, built in 48 hours. It combines ID verification,
+            sanctions screening, institutional and publication checks, and protein language model sequence screening into one
+            cumulative risk assessment that supports human decisions rather than replacing them.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://biosecure-passport.vercel.app/"><i class="fa-solid fa-display"></i>Demo</a>
+            <a class="btn" href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/e0046d65-3cee-46b1-9235-c3e9ebf60642-BioSecure.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://apartresearch.com/sprints/projects/biosecure-knowyourcustomer-system-for-dna-synthesis-companies-pkjb"><i class="fa-solid fa-flask"></i>Project</a>
+            <a class="btn" href="https://builddefenses.ai/"><i class="fa-solid fa-trophy"></i>Hackathon</a>
+          </div>
+        </div>
+        <a class="pub-thumb cover" href="https://biosecure-passport.vercel.app/"><img src="assets/img/research/biosecure.jpg" alt="BioSecure demo application" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="biosafeguards bioinformatics hackathon">
+        <div class="pub-body">
+          <span class="badge">&#127942; Winner &middot; AI &times; Bio Hackathon, London</span>
+          <h3><a href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/7ca73223-c248-4bd6-8dee-d7ffb29f3fc4-SplitScreen---AI-x-Bio-hackathon-submission.pdf">SplitScreen: Benchmarking obfuscated split-order detection methods</a></h3>
+          <p class="venue">BlueDot Impact, Apart Research &amp; Cambridge Biosecurity Hub, 2026</p>
+          <p class="authors">A. Jones, <b>P. Palmer</b>, P. Garg</p>
+          <p class="summary">
+            DNA synthesis screening works on single oligos, so an adversary can split a hazardous gene across many short fragments
+            that each pass. We built an open-source benchmark for split-order detection: a data generator with configurable
+            obfuscation, six detection methods, and an evaluation harness. Alignment-based methods stayed robust under codon
+            substitution where exact-match methods broke down.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/7ca73223-c248-4bd6-8dee-d7ffb29f3fc4-SplitScreen---AI-x-Bio-hackathon-submission.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://github.com/PhilPalmer/split-screen"><i class="fa-brands fa-github"></i>Code</a>
+            <a class="btn" href="https://bio.builddefenses.ai"><i class="fa-solid fa-trophy"></i>Hackathon</a>
+          </div>
+        </div>
+        <a class="pub-thumb cover" href="https://bio.builddefenses.ai"><img src="assets/img/research/splitscreen.jpg" alt="Presenting SplitScreen at the AI x Bio hackathon" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="covid first-author">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.3389/fimmu.2021.681636">AutoPlate: Rapid dose-response curve analysis for biological assays</a></h3>
+          <p class="venue">Frontiers in Immunology, 2022</p>
+          <p class="authors"><b>P. Palmer</b>, J.M.M. Del Rosario, K.A.S. da Costa, G.W. Carnell, C.Q. Huang, J.L. Heeney, N.J. Temperton, D.A. Wells</p>
+          <p class="summary">
+            An open-source R Shiny app that automates dose-response curve fitting for immunoassays such as the pseudotype
+            microneutralisation assay, cutting analysis time during COVID-19 and influenza work.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.3389/fimmu.2021.681636"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.681636/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://github.com/PhilPalmer/AutoPlate"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.3389/fimmu.2021.681636"><img src="assets/img/research/autoplate.jpg" alt="AutoPlate assay workflow" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="covid">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.3389/fimmu.2022.773982">Neutralisation hierarchy of SARS-CoV-2 variants of concern using standardised, quantitative neutralisation assays reveals a correlation with disease severity</a></h3>
+          <p class="venue">Frontiers in Immunology, 2022</p>
+          <p class="authors">D. Cantoni, M. Mayora-Neto, A. Nadesalingam, D.A. Wells, G.W. Carnell, L. Ohlendorf, M. Ferrari, <b>P. Palmer</b>, et al.</p>
+          <p class="summary">
+            Benchmarks how well first-wave convalescent sera neutralise each SARS-CoV-2 variant of concern, reported in
+            international units, and finds that more severe COVID-19 corresponded to broader neutralisation.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.3389/fimmu.2022.773982"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2022.773982/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+          </div>
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.3389/fimmu.2022.773982"><img src="assets/img/research/neutralisation.jpg" alt="Standardising neutralisation assays across laboratories" loading="lazy"></a>
+      </article>
+
+      <article class="pub" data-tags="covid">
+        <div class="pub-body">
+          <h3><a href="https://doi.org/10.3389/fimmu.2021.748291">Analysis of serological biomarkers of SARS-CoV-2 infection in convalescent samples from severe, moderate and mild COVID-19 cases</a></h3>
+          <p class="venue">Frontiers in Immunology, 2021</p>
+          <p class="authors">J. Castillo-Olivares, D.A. Wells, M. Ferrari, A.C.Y. Chan, P. Smith, A. Nadesalingam, M. Paloniemi, G.W. Carnell, L. Ohlendorf, D. Cantoni, M. Mayora-Neto, <b>P. Palmer</b>, et al.</p>
+          <p class="summary">
+            Compares neutralising and binding antibody assays against the WHO international standard to find biomarkers that
+            distinguish severe from mild infection, as candidate correlates of protection.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.3389/fimmu.2021.748291"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://www.frontiersin.org/articles/10.3389/fimmu.2021.748291/pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+          </div>
+        </div>
+        <a class="pub-thumb" href="https://doi.org/10.3389/fimmu.2021.748291"><img src="assets/img/research/serology.jpg" alt="Correlation matrix of serological biomarkers" loading="lazy"></a>
+      </article>
+
+    </div>
+    <p class="empty" id="pub-empty" hidden>Nothing with that tag.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head">
+      <h2>Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/safely.png" alt="safely.bio logo" loading="lazy">
+        <h3>Co-Founder &middot; <a href="https://safely.bio">safely.bio</a></h3>
+        <p class="meta">Apr 2026 &ndash; Present &middot; Cambridge, UK</p>
+        <ul>
+          <li>Building a verification system for the biotech industry.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/cbh.png" alt="Cambridge Biosecurity Hub logo" loading="lazy">
+        <h3>Research Lead &middot; <a href="https://www.cambiohub.org/">Cambridge Biosecurity Hub</a></h3>
+        <p class="meta">2021 &ndash; Present &middot; Cambridge, UK</p>
+        <ul>
+          <li>Scaled the hub from 0 to 30+ members, helped run the weekly reading group, and mentored two graduate students on a biosecurity project quantifying pandemic risks.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/nti.png" alt="Nuclear Threat Initiative logo" loading="lazy">
+        <h3>Technical Consultant &middot; <a href="https://www.nti.org/">Nuclear Threat Initiative</a></h3>
+        <p class="meta">Jul 2025 &ndash; Mar 2026</p>
+        <ul>
+          <li>Developed <a href="https://github.com/PhilPalmer/bioscreen">BioScreen</a>, a biosecurity screening method for AI protein design tools.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/aim.png" alt="Ambitious Impact logo" loading="lazy">
+        <h3>Founder in Residence &middot; <a href="https://www.ambitiousimpact.com/">Ambitious Impact</a></h3>
+        <p class="meta">Jan 2026 &ndash; Mar 2026 &middot; London, UK</p>
+        <ul>
+          <li>Selected as one of 20 participants from 1,000+ applicants for the Founding to Give programme.</li>
+          <li>Explored and validated high-impact venture opportunities across biotech.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/fiftyyears.png" alt="Fifty Years logo" loading="lazy">
+        <h3>5050 Fellow, UK Cohort 2 &middot; <a href="https://www.fiftyyears.com/">Fifty Years</a></h3>
+        <p class="meta">Oct 2025 &ndash; Dec 2025</p>
+        <ul>
+          <li>Building a biosecurity startup.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/cltr.png" alt="Centre for Long-Term Resilience logo" loading="lazy">
+        <h3>Consultant &middot; <a href="https://www.longtermresilience.org/">The Centre for Long-Term Resilience</a></h3>
+        <p class="meta">Feb 2025 &ndash; Mar 2025</p>
+        <ul>
+          <li>Evaluated narrow AI-enabled biological tools to assess their dual-use risks as part of the CLTR&ndash;RAND Risk Index project, informing policy efforts to reduce the risk of AI-enabled biothreats.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/cambridge.png" alt="University of Cambridge logo" loading="lazy">
+        <h3>PhD in Biology &middot; <a href="https://www.vet.cam.ac.uk/">University of Cambridge</a></h3>
+        <p class="meta">Oct 2020 &ndash; Feb 2025 &middot; Cambridge, UK</p>
+        <ul>
+          <li>Lab of Viral Zoonotics, supervised by Prof. Jonathan Heeney.</li>
+          <li>Developed computational methods to design broad-spectrum vaccines and antibodies against antigenically diverse pathogens.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/mit.png" alt="MIT Media Lab logo" loading="lazy">
+        <h3>Visiting Researcher &middot; <a href="https://www.media.mit.edu/">MIT Media Lab</a></h3>
+        <p class="meta">Oct 2022 &ndash; Jan 2023 &middot; Boston, MA</p>
+        <ul>
+          <li>Evaluated and improved a general-purpose metagenomics pipeline for the <a href="https://www.naobservatory.org/">Nucleic Acid Observatory</a>, which aims to build a reliable early detection system for catastrophic biothreats.</li>
+          <li>Supervised by Prof. Kevin Esvelt and Dr Mike McLaren.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/lifebit.png" alt="Lifebit logo" loading="lazy">
+        <h3>Bioinformatician &middot; <a href="https://lifebit.ai/">Lifebit</a></h3>
+        <p class="meta">Jul 2018 &ndash; Jul 2020 &middot; London, UK</p>
+        <ul>
+          <li>Joined as employee ~10 shortly after the seed round; contributed to growth to ~30 employees and a $7.5M Series A, including delivery of the <a href="https://www.genomicsengland.co.uk/news/research-environment-covid-19-lifebit-aws">Genomics England Research Platform</a> for COVID-19 response.</li>
+          <li>Built bioinformatics pipelines adopted by leading genetics firms including Nebula Genomics and Sano Genetics, analysing data from thousands of customers.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <img class="job-logo" src="assets/img/logos/southampton.svg" alt="University of Southampton logo" loading="lazy">
+        <h3>BSc Biology, First Class Honours &middot; University of Southampton</h3>
+        <p class="meta">2015 &ndash; 2018 &middot; Southampton, UK</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="container contact">
+    <div class="section-head">
+      <h2>Contact</h2>
+    </div>
+    <a class="contact-link" href="https://linkedin.com/in/phil-palmer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    &copy; <span id="year">2026</span> Phil Palmer
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=18"></script>
+</body>
+</html>
