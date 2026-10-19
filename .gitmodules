@@ -1,6 +1,0 @@
-[submodule "themes/academia-hugo"]
-	path = themes/academia-hugo
-	url = https://github.com/PhilPalmer/Academia-hugo.git
-[submodule "content/documentation"]
-	path = content/documentation
-	url = https://github.com/PhilPalmer/docs.git
