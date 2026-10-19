@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=7">
+  <link rel="stylesheet" href="assets/css/style.css?v=10">
   <script>
     try {
       var t = localStorage.getItem("theme");
@@ -34,6 +34,7 @@
     <a class="brand" href="#">Phil Palmer</a>
     <div class="nav-links">
       <a href="#about" class="hide-sm">About</a>
+      <a href="#featured">Featured</a>
       <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
@@ -79,11 +80,102 @@
   </div>
 </section>
 
+<section id="featured" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Featured</h2>
+      <p>Research highlights</p>
+    </div>
+
+    <div class="items">
+
+      <div class="item">
+        <a class="thumb" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1"><img src="assets/img/research/safety-first.jpg" alt="Input screening workflow for protein design tools" loading="lazy"></a>
+        <div>
+          <h3><a href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1">Safety First: Input Screening for Protein Design Tools</a></h3>
+          <p class="venue">bioRxiv preprint, 2026 &middot; Nuclear Threat Initiative</p>
+          <p class="authors"><b>P. Palmer</b>, N. Teran, N. Wheeler, J.M. Yassif</p>
+          <p class="summary">
+            AI protein design tools can produce novel sequences that similarity-based screening misses. <b>BioScreen</b> screens the
+            <i>target</i> instead: a database of 14,541 potentially harmful human proteoforms, classified by risk level, combined with
+            embedding-based screening using the ESM-C protein language model. It reaches F1 &gt; 97% on variants of known targets and
+            tells benign mutations apart from damaging ones where BLASTP does not.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1"><i class="ai ai-biorxiv"></i>Preprint</a>
+            <a class="btn" href="https://www.biorxiv.org/content/10.64898/2026.08.04.740855v1.full.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://github.com/PhilPalmer/bioscreen"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <a class="thumb" href="https://doi.org/10.1016/j.crmeth.2026.101508"><img src="assets/img/research/spectravax.jpg" alt="Spectravax graphical abstract" loading="lazy"></a>
+        <div>
+          <h3><a href="https://doi.org/10.1016/j.crmeth.2026.101508">A computational method to design broad-spectrum T cell-inducing vaccines applied to Betacoronaviruses</a></h3>
+          <p class="venue">Cell Reports Methods, 2026</p>
+          <p class="authors"><b>P. Palmer</b>, S. Fedosyuk, S. Parthasarathy, J. Holbrook, C. George, L. O'Reilly, L. Wiegand, G.W. Carnell, J.L. Heeney, S. Vishwanath</p>
+          <p class="summary">
+            <b>Spectravax</b> designs vaccines that account for genetic diversity in both the human host and the pathogen.
+            A single designed nucleocapsid antigen raised immune responses in mice to SARS-CoV, SARS-CoV-2 <i>and</i> MERS-CoV &mdash;
+            the three coronaviruses behind every major outbreak since 2002.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.1016/j.crmeth.2026.101508"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13494552/pdf/main.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://doi.org/10.1101/2025.04.14.648815"><i class="ai ai-biorxiv"></i>Preprint</a>
+            <a class="btn" href="https://github.com/PhilPalmer/Spectravax"><i class="fa-brands fa-github"></i>Code</a>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <a class="thumb cover" href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf"><img src="assets/img/research/risk-index.jpg" alt="Global Risk Index for AI-enabled Biological Tools report cover" loading="lazy"></a>
+        <div>
+          <h3><a href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf">Global Risk Index for AI-enabled Biological Tools</a></h3>
+          <p class="venue">The Centre for Long-Term Resilience &amp; RAND Europe, 2025</p>
+          <p class="summary">
+            A global assessment of the dual-use risks posed by narrow AI-enabled biological tools, built to inform policy on reducing
+            the risk of AI-enabled biothreats. I contributed tool evaluations as a consultant.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://www.longtermresilience.org/wp-content/uploads/2025/09/Global-Risk-Index-for-AI-enabled-Biological-Tools_Public-Report-1.pdf"><i class="fa-regular fa-file-pdf"></i>Report</a>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <a class="thumb" href="https://doi.org/10.1080/22221751.2025.2511132"><img src="assets/img/research/diosvax-h5.jpg" alt="Haemagglutinin antigen displayed on a nanocage" loading="lazy"></a>
+        <div>
+          <h3><a href="https://doi.org/10.1080/22221751.2025.2511132">Computationally designed haemagglutinin with nanocage plug-and-display elicits pan-H5 influenza vaccine responses</a></h3>
+          <p class="venue">Emerging Microbes &amp; Infections, 2025</p>
+          <p class="authors">C.Q. Huang, R.A. Hills, G.W. Carnell, S. Vishwanath, E.T. Aguinam, A.C.Y. Chan, <b>P. Palmer</b>, L. O'Reilly, P. Tonks, N. Temperton, S.D.W. Frost, L.S. Tiley, M.R. Howarth, J.L. Heeney</p>
+          <p class="summary">
+            A computationally designed H5 antigen displayed multivalently on the mi3 nanocage. At low doses it elicits cross-clade
+            neutralising antibody and T cell responses against diverse H5 bird flu strains &mdash; a scalable candidate for
+            pre-pandemic stockpiling.
+          </p>
+          <div class="buttons">
+            <a class="btn" href="https://doi.org/10.1080/22221751.2025.2511132"><i class="fa-regular fa-file-lines"></i>Paper</a>
+            <a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12258178/pdf/TEMI_14_2511132.pdf"><i class="fa-regular fa-file-pdf"></i>PDF</a>
+            <a class="btn" href="https://doi.org/10.1101/2024.11.14.623359"><i class="ai ai-biorxiv"></i>Preprint</a>
+          </div>
+        
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="publications">
   <div class="container">
     <div class="section-head">
       <h2>Publications</h2>
-      <p>Full listing on <a href="https://scholar.google.com/citations?user=VMrmNJcAAAAJ">Google Scholar</a></p>
+      <p>Everything else. Full listing on <a href="https://scholar.google.com/citations?user=VMrmNJcAAAAJ">Google Scholar</a></p>
     </div>
 
     <div class="filters" id="pub-filters">
@@ -440,6 +532,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=7"></script>
+<script src="assets/js/main.js?v=10"></script>
 </body>
 </html>

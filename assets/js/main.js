@@ -61,8 +61,9 @@
     pubs.forEach(function (pub) {
       var tags = (pub.dataset.tags || "").split(/\s+/);
       var match = tag === "*" || tags.indexOf(tag) !== -1;
-      // While unfiltered and collapsed, only the featured entries show.
-      var collapsed = tag === "*" && !expanded && !pub.classList.contains("featured");
+      // The featured entries have their own section, so they stay out of
+      // the unfiltered list until it is expanded.
+      var collapsed = tag === "*" && !expanded && pub.classList.contains("featured");
       pub.hidden = !match || collapsed;
       if (match) {
         shown++;
@@ -74,7 +75,7 @@
     if (moreBtn) {
       // The button is only meaningful on the unfiltered list.
       moreBtn.parentElement.hidden = tag !== "*";
-      moreBtn.textContent = expanded ? "See less" : "See more (" + hiddenByCollapse + ")";
+      moreBtn.textContent = expanded ? "Show fewer" : "See all (" + pubs.length + ")";
       moreBtn.setAttribute("aria-expanded", String(expanded));
     }
   }
